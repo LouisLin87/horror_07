@@ -19,7 +19,7 @@ body{position:fixed;inset:0}button,input{font:inherit}button{min-height:48px;bor
 .warning{border-left:3px solid #9bb59b;padding:0 0 0 12px}.warning h2{font-size:14px;margin:0 0 5px;color:#415345}.warning p{margin:0;font-size:13px;line-height:1.6}.permission-title{font-size:13px;line-height:1.5;margin:0}.options{display:grid;grid-template-columns:1fr 1fr;gap:8px}.option{display:flex;align-items:center;gap:9px;min-height:48px;border:1px solid var(--line);padding:8px;font-size:13px;cursor:pointer}.option input,.ack input{width:20px;height:20px;flex:0 0 20px;accent-color:#b95741;margin:0}.ack{display:flex;align-items:center;gap:9px;min-height:40px;font-size:13px;line-height:1.5;cursor:pointer}.privacy{font-size:11px;line-height:1.5;color:var(--muted);margin:0}.begin{width:100%;min-height:54px;display:flex;justify-content:space-between;align-items:center}.begin .arrow{font-size:24px;font-weight:400}.serial{font:10px/1.4 ui-monospace,monospace;color:var(--muted);letter-spacing:.08em}.intro-footer{display:flex;justify-content:space-between;gap:12px}#intro{color-scheme:light;--paper:#33453b;--ink:#f4f3ed;--muted:#55625a;--line:#c7d3c8;color:var(--paper);background:radial-gradient(ellipse at 90% 0,#dce8d7,transparent 65%),#f4f3ed}#intro button,#intro input{background:#fff;border-radius:12px;accent-color:#416f5d}#intro .option{background:#ffffff99;border-radius:10px}#intro .languages button[aria-pressed=true],#intro button.primary{background:#416f5d;color:#fff;border-color:#416f5d}#intro :focus-visible{outline-color:#416f5d}
 #gameUI{position:absolute;inset:0;z-index:10;pointer-events:none}#gameUI button{pointer-events:auto}.game-top{position:absolute;top:calc(12px + var(--safe-top));left:16px;right:16px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px}.chapter{font:11px/1.5 ui-monospace,monospace;letter-spacing:.12em;color:#d8ced0}.chapter strong{display:block;color:#eee8e4;font-size:15px;letter-spacing:.02em;font-family:inherit;font-weight:500}.top-actions{display:flex;gap:8px}.top-actions button{padding:8px;min-width:48px;font-size:12px;background:#100c0dc9}.status{position:absolute;top:calc(80px + var(--safe-top));left:16px;right:16px;font:11px/1.5 ui-monospace,monospace;color:#c7bcbd;letter-spacing:.02em;pointer-events:none}.status:empty{display:none}.game-bottom{position:absolute;bottom:calc(12px + var(--safe-bottom));left:16px;right:16px;display:flex;flex-direction:column;gap:10px}.instruction{font-size:14px;line-height:1.6;margin:0;max-width:540px;text-shadow:0 2px 5px #000,0 0 12px #000}.instruction .label{font:10px/1.4 ui-monospace,monospace;letter-spacing:.18em;display:block;margin-bottom:4px;color:#c3b5b6}.toolbar{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}.toolbar button{font-size:12px;background:#191416e8;min-width:0;padding:8px 3px}.progress{height:3px;background:#5054428a;margin-bottom:2px;overflow:hidden}.progress div{height:100%;background:#c49671;width:0}.stage-action{align-self:flex-start;min-width:160px;padding:8px 16px;background:#1c1417e8}.toast{position:absolute;z-index:14;left:20px;right:20px;top:46%;text-align:center;font-family:Georgia,"Noto Serif TC",serif;font-size:18px;color:#ebd9c0;pointer-events:none;text-shadow:0 2px 8px #000,0 0 15px #000;line-height:1.6}.toast:empty{display:none}
 #lockPanel{position:absolute;z-index:12;left:50%;width:min(78vw,310px);border:1px solid #7e7e65;padding:16px;background:#171115e8}.lock-title{font-size:12px;text-align:center;letter-spacing:.1em;margin:0 0 12px;color:#c4c4ac}.code{font:36px/1.3 ui-monospace,monospace;letter-spacing:.22em;color:#e8dddd;text-align:center;min-height:48px;margin-bottom:10px}.keys{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
-#scare{z-index:1000;background:#030303;padding:0}#scareCanvas{position:absolute;inset:0;width:100%;height:100%}#scareImage{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}#scareCaption{position:absolute;bottom:calc(110px + var(--safe-bottom));left:20px;right:20px;text-align:center;font-family:Georgia,"Noto Serif TC",serif;font-weight:900;font-size:clamp(34px,11vw,80px);line-height:1.05;color:#f7593f;text-shadow:2px 2px #060000;pointer-events:none}.scare-controls{position:absolute;top:calc(12px + var(--safe-top));right:16px;display:flex;gap:8px;z-index:1002}.scare-controls button{background:#0b0b0be8;border-color:#baafa0;font-size:13px}.scare-continue{position:absolute;bottom:calc(28px + var(--safe-bottom));left:50%;transform:translateX(-50%);z-index:1002;min-width:180px}#pauseScreen{z-index:1100}.pause-title{font:32px/1.4 Georgia,"Noto Serif TC",serif;margin:0}.pause-copy{line-height:1.7;font-size:14px;color:var(--muted);margin:0}.pause-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}#ending{z-index:40}.ending-number{font:12px/1.5 ui-monospace,monospace;letter-spacing:.16em;color:#cd7b62}.ending-title{font:clamp(30px,8vw,50px)/1.25 Georgia,"Noto Serif TC","Noto Serif JP",serif;margin:0;color:#ece0c4}.ending-copy{font-size:15px;line-height:1.9;margin:8px 0;color:#d6ceb6}.ending-actions{display:flex;gap:8px;flex-direction:column}.artifact{width:72px;height:72px;border:1px solid #947d56;display:grid;place-items:center;margin:8px 0;color:#d0b276}.artifact svg{width:44px;height:44px}.end-legal{font-size:11px;color:var(--muted);line-height:1.6;margin:0}
+#scare{z-index:1000;background:#030303;padding:0}#scareCanvas{position:absolute;inset:0;width:100%;height:100%}#scareImage{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}#scareCaption{position:absolute;bottom:calc(110px + var(--safe-bottom));left:20px;right:20px;text-align:center;font-family:Georgia,"Noto Serif TC",serif;font-weight:900;font-size:clamp(34px,11vw,80px);line-height:1.05;color:#f7593f;text-shadow:2px 2px #060000;pointer-events:none}.scare-controls{position:absolute;top:calc(12px + var(--safe-top));right:16px;display:flex;gap:8px;z-index:1002}.scare-controls button{background:#0b0b0be8;border-color:#baafa0;font-size:13px;min-width:48px}.scare-continue{position:absolute;bottom:calc(28px + var(--safe-bottom));left:50%;transform:translateX(-50%);z-index:1002;min-width:180px}#pauseScreen{z-index:1100}.pause-title{font:32px/1.4 Georgia,"Noto Serif TC",serif;margin:0}.pause-copy{line-height:1.7;font-size:14px;color:var(--muted);margin:0}.pause-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}#ending{z-index:40}.ending-number{font:12px/1.5 ui-monospace,monospace;letter-spacing:.16em;color:#cd7b62}.ending-title{font:clamp(30px,8vw,50px)/1.25 Georgia,"Noto Serif TC","Noto Serif JP",serif;margin:0;color:#ece0c4}.ending-copy{font-size:15px;line-height:1.9;margin:8px 0;color:#d6ceb6}.ending-actions{display:flex;gap:8px;flex-direction:column}.artifact{width:72px;height:72px;border:1px solid #947d56;display:grid;place-items:center;margin:8px 0;color:#d0b276}.artifact svg{width:44px;height:44px}.end-legal{font-size:11px;color:var(--muted);line-height:1.6;margin:0}
 @media(max-height:700px) and (orientation:portrait){.overlay{padding:calc(10px + var(--safe-top)) 16px calc(10px + var(--safe-bottom))}.sheet{gap:8px}.intro-sub{font-size:12px;margin-top:4px}.warning p{font-size:12px;line-height:1.5}.privacy{font-size:10px}.intro-title{padding-bottom:4px}.intro-top .eyebrow{font-size:9px}.option{font-size:12px;min-height:48px;padding:6px}.begin{min-height:50px}.game-bottom{gap:6px}.instruction{font-size:12px}.game-top{top:calc(8px + var(--safe-top))}.status{top:calc(70px + var(--safe-top))}}
 @media(orientation:landscape) and (max-height:560px){#intro .sheet{width:min(100%,860px);display:grid;grid-template-columns:1fr 1fr;gap:8px 24px}#intro .intro-top{grid-column:1/-1}#intro .intro-title{grid-column:1;grid-row:2/4;align-self:center}#intro .warning{grid-column:2;grid-row:2}#intro .permission-title{grid-column:2}#intro .options{grid-column:2}#intro .privacy{grid-column:1;grid-row:4;align-self:end}#intro .age{grid-column:2}#intro .begin{grid-column:2}#intro h1{font-size:54px}html[lang=en] #intro h1{font-size:34px}html[lang=ja] #intro h1{font-size:40px}#intro .warning p{font-size:12px}#intro .option{font-size:12px}#intro .sheet{gap:6px 20px}.overlay{padding:calc(8px + var(--safe-top)) 24px calc(8px + var(--safe-bottom))}.game-bottom{left:16px;right:16px;display:grid;grid-template-columns:1fr 320px;align-items:end;gap:8px 16px}.toolbar{grid-column:2;grid-row:1/4}.instruction{font-size:12px;max-width:340px}.status{top:68px;width:210px}.stage-action{min-width:130px;min-height:44px;font-size:12px}.ending-copy{font-size:13px;line-height:1.6}.artifact{display:none}#ending .sheet{max-width:660px}.ending-actions{flex-direction:row}.ending-actions button{flex:1}.ending-title{font-size:30px}.scare-continue{bottom:16px}#scareCaption{bottom:88px}}
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;animation:none!important;transition:none!important}}
@@ -48,9 +48,18 @@ body.storage-blocked #intro .privacy{display:none}
 @media(orientation:landscape) and (max-height:560px){#intro .sheet{gap:4px 20px}#intro .birthday-row{grid-column:1;grid-row:5}#intro .intro-footer{display:none}#curseIntro .birthday-row{grid-column:1;grid-row:5}#curseIntro .privacy{grid-row:6}#curseStorageNotice{grid-row:7}#lockPanel{left:60%;top:44%;width:270px;padding:8px}.lock-title{font-size:11px;margin-bottom:4px}.code{font-size:26px;min-height:32px;margin-bottom:6px}.keys{gap:4px}.birthday-row label{font-size:11px}.birthday-row small{font-size:10px}#lockout .sheet{gap:8px}#lockoutCounter{font-size:76px}}
 .age{display:flex;align-items:center;gap:8px}.age .ack{flex:1;font-size:12px}.minor{flex-shrink:0}
 #intro .storage-notice{color:#71512b}
+
+/* 相機只提供即時預覽，Canvas 透明疊圖；不逐格拷貝或存下真人畫面。 */
+#cameraFeed{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.48) contrast(1.3);pointer-events:none}
+#cameraChoice{z-index:25;background:#100c0df5}#cameraChoice h2{font:28px/1.3 Georgia,serif;margin:0}.camera-copy{font-size:13px;line-height:1.7;margin:0;color:#d7cfca}.camera-choices{display:grid;gap:8px}.scan-tools{position:absolute;left:16px;right:16px;top:calc(112px + var(--safe-top));display:flex;gap:8px;align-items:center}.scan-tools button{font-size:12px;min-width:48px;background:#100c0ddd}.scan-count{font:12px/1.4 ui-monospace,monospace;background:#0b0b0bc9;padding:8px;color:#d9cdc1;pointer-events:none}
+#echoPanel{position:absolute;left:50%;top:42%;transform:translate(-50%,-50%);width:min(80vw,380px);pointer-events:none}.echo-doors{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}#echoPanel button{pointer-events:auto;background:#171115eb;min-height:80px;font:22px/1.4 ui-monospace,monospace;border-color:#766664}#echoPanel button.lit{background:#513133;border-color:#d9b2a0}.echo-readout{font:12px/1.6 ui-monospace,monospace;text-align:center;color:#e1c9b4;background:#100c0de0;margin:12px 0 0;padding:8px;min-height:36px}
+@media(orientation:landscape) and (max-height:560px){.scan-tools{top:100px;right:auto;max-width:290px}.scan-tools button{font-size:11px;padding:6px}#echoPanel{width:300px;left:64%;top:46%}#echoPanel button{min-height:60px}#cameraChoice .sheet{max-width:700px;gap:8px}#cameraChoice h2{font-size:22px}.camera-choices{grid-template-columns:1fr 1fr 1fr}.camera-copy{font-size:12px;line-height:1.5}}
+/* 模擬失控只在頁內 Canvas；真正操作按鈕維持穩定、不被假視窗蓋住。 */
+#scare.storm #scareCaption{font-family:ui-monospace,monospace;font-size:clamp(20px,6vw,38px);line-height:1.25;letter-spacing:.05em;color:#ffd2cc;text-shadow:0 2px 6px #000,0 0 16px #000}
 </style>
 </head>
 <body>
+<video id="cameraFeed" autoplay muted playsinline hidden></video>
 <canvas id="world" aria-hidden="true"></canvas>
 <canvas id="veil" aria-hidden="true"></canvas>
 <canvas id="grain" width="128" height="192" aria-hidden="true"></canvas>
@@ -70,7 +79,7 @@ body.storage-blocked #intro .privacy{display:none}
   </div>
   <p class="privacy" data-i18n="privacy"></p>
   <p id="storageNotice" class="storage-notice" data-i18n="storageUnavailable" hidden></p>
-  <div class="birthday-row"><label for="birthday"><span data-i18n="birthdayLabel"></span><small data-i18n="birthdayHelp"></small></label><input id="birthday" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="0618" aria-invalid="false"></div>
+  <div class="birthday-row"><label for="birthday"><span data-i18n="birthdayLabel"></span><small data-i18n="birthdayHelp"></small></label><input id="birthday" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="0101" aria-invalid="false"></div>
   <div class="age"><label class="ack"><input id="acknowledge" type="checkbox"><span data-i18n="ack"></span></label><button class="small minor" data-i18n="minor"></button></div>
   <button id="start" class="primary begin" disabled><span data-i18n="start"></span><span class="arrow" aria-hidden="true">→</span></button>
   <div class="intro-footer"><span class="serial">TAKE YOUR TIME</span><span class="serial" data-i18n="duration"></span></div>
@@ -91,7 +100,7 @@ body.storage-blocked #intro .privacy{display:none}
    <label class="option"><input id="curseFlash" type="checkbox"><span data-i18n="flashOption"></span></label>
   </div>
   <p id="curseStorageNotice" class="storage-notice" data-i18n="storageUnavailable" hidden></p>
-  <div class="birthday-row"><label for="curseBirthday"><span data-i18n="birthdayLabel"></span><small data-i18n="birthdayHelp"></small></label><input id="curseBirthday" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="0618" aria-invalid="false"></div>
+  <div class="birthday-row"><label for="curseBirthday"><span data-i18n="birthdayLabel"></span><small data-i18n="birthdayHelp"></small></label><input id="curseBirthday" type="text" inputmode="numeric" pattern="[0-9]{4}" maxlength="4" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="done" placeholder="0101" aria-invalid="false"></div>
   <div class="age"><label class="ack"><input id="curseAcknowledge" type="checkbox"><span data-i18n="ack"></span></label><button class="small minor" data-i18n="minor"></button></div>
   <button id="curseContinue" class="primary begin" disabled><span data-i18n="curseContinue"></span><span class="arrow" aria-hidden="true">→</span></button>
   <p class="privacy" data-i18n="cursePrivacy"></p>
@@ -101,7 +110,9 @@ body.storage-blocked #intro .privacy{display:none}
 <div id="purifyWash" hidden aria-hidden="true"></div>
 
 <main id="gameUI" hidden aria-label="Game">
- <header class="game-top"><div class="chapter"><span id="chapterNumber">01 / 03</span><strong id="chapterTitle"></strong></div><div class="top-actions"><button id="language" class="small">中文</button><button id="hint" class="small" data-i18n="hint"></button></div></header>
+ <div id="scanTools" class="scan-tools" hidden><button id="cameraToggle" data-i18n="cameraOpen"></button><span id="scanCount" class="scan-count" aria-live="polite"></span></div>
+ <div id="echoPanel" hidden><div class="echo-doors"><button data-echo="0" aria-label="1">1</button><button data-echo="1" aria-label="2">2</button><button data-echo="2" aria-label="3">3</button></div><p id="echoReadout" class="echo-readout" aria-live="polite"></p></div>
+ <header class="game-top"><div class="chapter"><span id="chapterNumber">01 / 05</span><strong id="chapterTitle"></strong></div><div class="top-actions"><button id="language" class="small">中文</button><button id="hint" class="small" data-i18n="hint"></button></div></header>
  <div id="sensorStatus" class="status" role="status" aria-live="polite"></div>
  <div id="toast" class="toast" aria-live="polite" aria-atomic="true"></div>
  <footer class="game-bottom">
@@ -116,11 +127,16 @@ body.storage-blocked #intro .privacy{display:none}
 <section id="lockPanel" hidden aria-label="Door lock"><p class="lock-title" data-i18n="lockTitle"></p><output id="codeDisplay" class="code" style="display:block" aria-live="polite">— — — —</output><div class="keys"><button data-digit="1">1</button><button data-digit="2">2</button><button data-digit="3">3</button><button data-digit="4">4</button><button data-digit="5">5</button><button data-digit="6">6</button><button data-digit="7">7</button><button data-digit="8">8</button><button data-digit="9">9</button><button id="clearCode" data-i18n="clear"></button><button data-digit="0">0</button><button id="openDoor" data-i18n="openDoor"></button></div></section>
 <section id="lockout" class="overlay" hidden aria-labelledby="lockoutCopy"><div class="lockout-controls"><button id="lockoutLanguage">中文</button><button id="lockoutMute" data-i18n="mute"></button><button id="lockoutExit" class="danger" data-i18n="exit"></button></div><div class="sheet"><p class="eyebrow">ACCESS DENIED / 003</p><div id="lockoutCounter" role="timer" aria-live="off">30</div><p id="lockoutCopy" data-i18n="lockedCopy"></p><p id="lockoutScope" class="privacy" data-i18n="lockedScope"></p></div></section>
 
-<section id="scare" class="overlay" hidden aria-labelledby="scareCaption"><canvas id="scareCanvas" aria-hidden="true"></canvas><img id="scareImage" alt="" hidden><div class="scare-controls"><button id="scareMute"></button><button id="scareExit" class="danger" data-i18n="exit"></button></div><div id="scareCaption"></div><button id="scareContinue" class="primary scare-continue" data-i18n="continue"></button></section>
+<section id="scare" class="overlay" hidden aria-labelledby="scareCaption"><canvas id="scareCanvas" aria-hidden="true"></canvas><img id="scareImage" alt="" hidden><div class="scare-controls"><button id="scarePause" data-i18n="pause"></button><button id="scareMute"></button><button id="scareExit" class="danger" data-i18n="exit"></button></div><div id="scareCaption"></div><button id="scareContinue" class="primary scare-continue" data-i18n="continue"></button></section>
 <section id="pauseScreen" class="overlay" hidden aria-labelledby="pauseTitle"><div class="sheet"><p class="eyebrow">SIGNAL HELD</p><h2 id="pauseTitle" class="pause-title" data-i18n="paused"></h2><p class="pause-copy" data-i18n="pauseCopy"></p><div class="pause-actions"><button id="resume" class="primary" data-i18n="resume"></button><button id="pauseExit" class="danger" data-i18n="exit"></button></div></div></section>
 <section id="ending" class="overlay warning-bg" hidden aria-labelledby="endingTitle"><div class="sheet"><p id="endingNumber" class="ending-number"></p><div class="artifact" aria-hidden="true"><svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M32 5 39 23 59 25 44 38 48 58 32 47 16 58 20 38 5 25 25 23Z"/><circle cx="32" cy="32" r="8"/><path d="M32 13v10m0 18v10M13 32h10m18 0h10"/></svg></div><h2 id="endingTitle" class="ending-title"></h2><p id="endingCopy" class="ending-copy"></p><div class="ending-actions"><button id="replay" class="primary" data-i18n="replay"></button><button id="share" data-i18n="share"></button></div><p id="shareStatus" class="privacy" role="status"></p><p class="end-legal" data-i18n="fiction"></p></div></section>
 <noscript><div class="overlay">此遊戲需要 JavaScript。 / JavaScript is required. / JavaScript を有効にしてください。</div></noscript>
 
+<section id="cameraChoice" class="overlay" hidden aria-labelledby="cameraTitle"><div class="sheet">
+ <p class="eyebrow">02 / 05 · VIEWFINDER</p><h2 id="cameraTitle" data-i18n="chapter4"></h2>
+ <p class="camera-copy" data-i18n="cameraNotice"></p><p class="camera-copy" id="cameraError" role="status"></p>
+ <div class="camera-choices"><button id="cameraOpen" class="primary" data-i18n="cameraOpen"></button><button id="cameraSkip" data-i18n="cameraSkip"></button><button id="cameraExit" data-i18n="exit"></button></div>
+</div></section>
 <script>
 'use strict';
 /* ================================================================
@@ -132,16 +148,16 @@ const $ = id => document.getElementById(id);
 const clamp = (n,a,b) => Math.max(a,Math.min(b,n));
 const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
 const TEXT = {
- zh:{welcome:'小小探險室',minor:'未滿 18 歲',birthdayLabel:'未滿 18 歲禁止進入。生日月日（例：0618）：',birthdayHelp:'可填虛構日期，僅存本機。',lockedCopy:'密碼錯誤。怨靈已鎖定你的手機，請等待 30 秒…',lockedScope:'僅遊戲畫面鎖定。你仍可退出或關閉分頁，倒數不會重來。',scareFinal:'原來，是你的生日',gameCleared:'遊戲破關',curseMessage:'你以為你逃得掉嗎？這是你第 {count} 次來到這裡…',curseMemory:'同一扇門 · 它記得你',curseWarning:'仍有突然恐怖畫面與尖叫。請先降低音量，再選擇效果。',curseContinue:'面對它留下的記憶',cursePrivacy:'本機遊戲紀錄，非真實追蹤。不存取相機、麥克風或定位；可隨時關閉分頁。',storageUnavailable:'瀏覽器無法保存紀錄；詛咒只在目前頁面有效。',scareCountdown:'你的時間到了',restTitle:'已離開',restCopy:'聲音與感應器已停止。你可以關閉此分頁；遊戲紀錄仍留在這個瀏覽器。',returnEntry:'回到入口',title:'勿入',stamp:'慢慢來',tagline:'找個舒服的位置，依自己的步調開始。',warningTitle:'遊戲內容提醒',warningBody:'虛構恐怖解謎，含驚嚇與尖叫。閃光及震動由你選擇，可隨時退出。請先降低音量。',permissionTitle:'選擇想要的效果，耳機可自行準備',soundOption:'音效與尖叫',motionOption:'動作感應器（可選）',vibrateOption:'震動（可選）',flashOption:'短暫閃光（可選）',privacy:'觸控仍能通關。不使用相機、麥克風或定位；感應資料不傳送。',ack:'我已滿 18 歲、閱讀警告，願意進入。',start:'準備好了，開始',duration:'約 2–4 分鐘',hint:'提示',pause:'暫停',paused:'已暫停',pauseCopy:'畫面、聲音與遊戲時間都已停止。準備好再回去。',resume:'繼續遊戲',exit:'退出',recenter:'校正',mute:'靜音',unmute:'開啟聲音',continue:'繼續',chapter1:'沒有人的走廊',chapter2:'牆後的名字',chapter3:'最後一扇門',label1:'LOOK / TOUCH',label2:'WIPE / REMEMBER',label3:'REMEMBER / OPEN',instruction1:'滑動光圈，照亮走廊。找到地上的小骷髏，輕點它。',instruction2:'牆壁上有血跡，快把它擦乾淨…',instruction2b:'繼續擦。牆上留下的，是你進門時寫的月日。',instruction3:'門後很安靜。它還記得你留下的四個數字。',search:'搜尋光圈位置',wipeAssist:'逐區擦拭',wallNext:'走向那扇門 →',lockTitle:'輸入能解開你靈魂束縛的 4 位數密碼…',clear:'清除',openDoor:'確認',hint1:'小骷髏在畫面左下方，靠近地面。角落還藏著一枚印記。',hint2:'在中間來回擦，停住手指不算。露出的日期是不是很熟悉？',hint3:'你在入口留下的生日月日。忘記時可用 0618。',touchMode:'觸控模式 · 滑動光圈',motionWaiting:'感應器等待中 · 仍可滑動',motionMode:'感應器模式 · 傾斜手機，校正可重設',motionDenied:'未允許感應器 · 已改為觸控',motionUnsupported:'沒有可用感應器 · 已改為觸控',motionInsecure:'此網址無法使用感應器 · 觸控仍可玩',motionTimeout:'未收到感應資料 · 已改為觸控',motionReset:'光圈已校正',audioBlocked:'聲音未啟動 · 可按「開啟聲音」重試',empty:'你碰到的不是出口。',close:'你離它很近了。再往左下找。',mark:'你帶走了一枚不該帶走的印記。',scareTrap:'別碰我的眼睛',scareWall:'還沒擦乾淨',needCode:'需要四個數字。',endingA:'01 / 02 · 回聲',endingB:'02 / 02 · 隱藏出口',endingTitleA:'你出去了。是嗎？',endingTitleB:'它沒有跟上來。',endingCopyA:'門外是同一條走廊。牆上的名字，變成了「下一個」。你沒有帶走印記，所以門也沒有帶你走。',endingCopyB:'手裡的印記裂成兩半。身後那道門第一次真正關上了。你聽見很輕的一句：下次，別替我開門。',replay:'再進入一次',share:'分享入口',shared:'入口已複製。',shareFailed:'無法自動分享；請複製瀏覽器網址。',shareFile:'請先上傳 GitHub Pages，再分享 HTTPS 網址。',shareText:'勿入：用手機照亮走廊、擦開牆上的秘密。你找到的是出口，還是下一個入口？',fiction:'本作為原創虛構遊戲。沒有真實追蹤、入侵或靈異事件。',wipeLabel:'擦拭進度',gameLabel:'勿入：恐怖解謎',navLabel:'語言選擇',controlsLabel:'遊戲控制',lockLabel:'四位數靈魂密碼鎖'},
- en:{welcome:'A little adventure',minor:'Under 18',birthdayLabel:'18+ only. Birthday code (MMDD):',birthdayHelp:'Fictional is OK. Saved only on this device.',lockedCopy:'Wrong code. The spirit has locked your phone. Wait 30 seconds…',lockedScope:'Only game input is locked. You can exit or close the tab; the timer continues.',scareFinal:'IT WAS YOUR BIRTHDAY',gameCleared:'GAME CLEARED',curseMessage:'You thought you could escape? You have come back {count} times…',curseMemory:'THE SAME DOOR · IT REMEMBERS',curseWarning:'Sudden frightening images and screams remain. Lower the volume, then choose your effects.',curseContinue:'Face what remembers you',cursePrivacy:'Local game memory, not real tracking. No camera, microphone or location. You can close this tab anytime.',storageUnavailable:'Storage is unavailable. The curse lasts only on this open page.',scareCountdown:'YOUR TIME IS UP',restTitle:'You have left',restCopy:'Sound and sensors have stopped. You can close this tab; game memory stays in this browser.',returnEntry:'Return to the entrance',title:'DO NOT ENTER',stamp:'AT YOUR PACE',tagline:'Settle in. Begin when you feel ready.',warningTitle:'Before you begin',warningBody:'Fictional horror with sudden scares and screams. Flash and vibration are optional. Exit anytime. Lower the volume.',permissionTitle:'Choose your effects; headphones are optional.',soundOption:'Sound & screams',motionOption:'Motion (optional)',vibrateOption:'Vibration (optional)',flashOption:'Flash (optional)',privacy:'Touch always works. No camera, mic or location; motion data stays here.',ack:'I am 18 or older, have read the warning and choose to enter.',start:'BEGIN WHEN READY',duration:'About 2–4 minutes',hint:'Hint',pause:'Pause',paused:'Paused',pauseCopy:'The picture, sound and game clock have stopped. Return when you are ready.',resume:'Resume',exit:'Exit',recenter:'Center',mute:'Mute',unmute:'Sound on',continue:'Continue',chapter1:'The empty corridor',chapter2:'The name behind the wall',chapter3:'The last door',label1:'LOOK / TOUCH',label2:'WIPE / REMEMBER',label3:'REMEMBER / OPEN',instruction1:'Drag the light. Find the small skull on the floor and tap it.',instruction2:'There is blood on the wall. Wipe it clean…',instruction2b:'Keep wiping. The wall remembers the date you entered.',instruction3:'The door is quiet. It remembers the four digits you left.',search:'Search inside the light',wipeAssist:'Wipe one section',wallNext:'Approach the door →',lockTitle:'Enter the four digits that unbind your soul…',clear:'Clear',openDoor:'Confirm',hint1:'The skull is near the floor, toward the lower left. A seal is hidden in another corner.',hint2:'Rub the middle back and forth. Holding still does not count. Does the date look familiar?',hint3:'Use the birthday code you left at the entrance. 0618 also works.',touchMode:'TOUCH · Drag the light',motionWaiting:'WAITING FOR MOTION · Touch still works',motionMode:'MOTION · Tilt your phone; Center resets it',motionDenied:'MOTION DECLINED · Touch enabled',motionUnsupported:'NO MOTION SENSOR · Touch enabled',motionInsecure:'MOTION UNAVAILABLE ON THIS URL · Use touch',motionTimeout:'NO SENSOR DATA · Touch enabled',motionReset:'Light centered',audioBlocked:'SOUND NOT STARTED · Tap Sound on to retry',empty:'That is not the exit.',close:'You are close. Look farther down and left.',mark:'You took a seal that was not yours.',scareTrap:'DON’T TOUCH MY EYES',scareWall:'IT’S STILL THERE',needCode:'Four digits are required.',endingA:'01 / 02 · ECHO',endingB:'02 / 02 · HIDDEN EXIT',endingTitleA:'You got out. Did you?',endingTitleB:'It did not follow.',endingCopyA:'Outside is the same corridor. The name on the wall now says “NEXT”. You left the seal behind. The door left you behind, too.',endingCopyB:'The seal splits in your hand. For the first time, the door shuts completely. A quiet voice says: next time, don’t open it for me.',replay:'Enter again',share:'Share the entrance',shared:'Entrance link copied.',shareFailed:'Sharing is unavailable. Copy the browser URL instead.',shareFile:'Upload to GitHub Pages before sharing an HTTPS link.',shareText:'DO NOT ENTER: light the corridor and wipe away its secret. Did you find an exit, or another entrance?',fiction:'An original fictional game. No real tracking, intrusion or paranormal event.',wipeLabel:'Wiping progress',gameLabel:'Do Not Enter: horror puzzle',navLabel:'Choose language',controlsLabel:'Game controls',lockLabel:'Four-digit soul lock'},
- ja:{welcome:'ちいさな冒険室',minor:'18 歳未満',birthdayLabel:'18 歳未満は入場禁止。誕生日の月日（例：0618）：',birthdayHelp:'架空の日付でも可。端末内だけに保存。',lockedCopy:'暗証番号が違う。怨霊が端末を封じた。30 秒待って…',lockedScope:'ロックはゲーム内だけ。終了やタブを閉じても、残り時間はリセットされません。',scareFinal:'あなたの誕生日だった',gameCleared:'ゲームクリア',curseMessage:'逃げられると思った？ ここへ戻るのは {count} 回目…',curseMemory:'同じ扉 · あなたを覚えている',curseWarning:'突然の恐怖画像と叫び声があります。音量を下げ、効果を選んでください。',curseContinue:'残された記憶と向き合う',cursePrivacy:'端末内のゲーム記録です。実際の追跡ではありません。カメラ・マイク・位置情報は使いません。いつでもタブを閉じられます。',storageUnavailable:'記録を保存できません。呪いは現在のページだけで有効です。',scareCountdown:'時間切れ',restTitle:'終了しました',restCopy:'音とセンサーは停止しました。タブを閉じられます。ゲームの記録はこのブラウザーに残ります。',returnEntry:'入口へ戻る',title:'立入禁止',stamp:'ごゆっくり',tagline:'落ち着ける場所で、自分のペースでどうぞ。',warningTitle:'始める前のお知らせ',warningBody:'架空のホラーです。突然の恐怖画像と叫び声があります。点滅・振動は任意。いつでも終了でき、音量は小さめに。',permissionTitle:'効果は自分で選べます。イヤホンは任意です。',soundOption:'音と叫び声',motionOption:'動作センサー（任意）',vibrateOption:'振動（任意）',flashOption:'点滅（任意）',privacy:'センサーなしでもタッチで遊べます。カメラ・マイク・位置情報は使わず、センサーデータも送信しません。',ack:'18 歳以上で、警告を読み、自分の意思で入ります。',start:'準備ができたら開始',duration:'約 2〜4 分',hint:'ヒント',pause:'一時停止',paused:'一時停止中',pauseCopy:'画面、音、ゲームの時間が止まりました。準備ができたら戻ってください。',resume:'続ける',exit:'終了',recenter:'補正',mute:'消音',unmute:'音を出す',continue:'続ける',chapter1:'無人の廊下',chapter2:'壁の向こうの名前',chapter3:'最後の扉',label1:'LOOK / TOUCH',label2:'WIPE / REMEMBER',label3:'REMEMBER / OPEN',instruction1:'光を動かし、床の小さな頭蓋骨を探してタップしてください。',instruction2:'壁に血が付いている。早く拭き取って…',instruction2b:'拭き続けて。壁に残ったのは、入口で書いた月日。',instruction3:'扉の向こうは静か。あなたが残した四桁を覚えている。',search:'光の中を調べる',wipeAssist:'一部分を拭く',wallNext:'あの扉へ進む →',lockTitle:'魂の束縛を解く四桁の暗証番号を…',clear:'消す',openDoor:'確認',hint1:'頭蓋骨は画面の左下、床の近く。別の隅には印が隠れています。',hint2:'中央を往復して拭いて。指を止めても進まない。見覚えのある日付？',hint3:'入口で残した誕生日の月日。0618 でも開けられる。',touchMode:'タッチ操作 · 光を動かす',motionWaiting:'センサー待機中 · タッチも使えます',motionMode:'センサー操作 · 端末を傾ける／補正でリセット',motionDenied:'センサー不許可 · タッチに切り替えました',motionUnsupported:'センサーなし · タッチに切り替えました',motionInsecure:'この URL ではセンサーを使えません · タッチで操作',motionTimeout:'データなし · タッチに切り替えました',motionReset:'光を補正しました',audioBlocked:'音が未開始 ·「音を出す」で再試行',empty:'そこは出口ではない。',close:'もう近い。もっと左下を探して。',mark:'持ち主のいない印を持ち出した。',scareTrap:'私の目に触らないで',scareWall:'まだ消えていない',needCode:'四桁の数字が必要です。',endingA:'01 / 02 · こだま',endingB:'02 / 02 · 隠された出口',endingTitleA:'外に出た。そうでしょう？',endingTitleB:'ついてこなかった。',endingCopyA:'扉の外は同じ廊下。壁の名前は「次の人」に変わっていた。印を置いてきたあなたを、扉も置き去りにした。',endingCopyB:'手の中で印が二つに割れた。背後の扉が初めて完全に閉じる。かすかな声がした。次は、私のために開けないで。',replay:'もう一度入る',share:'入口を共有',shared:'入口のリンクをコピーしました。',shareFailed:'共有できません。ブラウザーの URL をコピーしてください。',shareFile:'GitHub Pages にアップロードし、HTTPS の URL を共有してください。',shareText:'立入禁止：廊下を照らし、壁の秘密を拭き出す。見つけたのは出口？ それとも次の入口？',fiction:'本作はオリジナルのフィクションです。実際の追跡・侵入・心霊現象はありません。',wipeLabel:'拭き取り進捗',gameLabel:'立入禁止：ホラーパズル',navLabel:'言語を選ぶ',controlsLabel:'ゲーム操作',lockLabel:'四桁の魂の暗証番号'}
+ zh:{stormTitle:'求救訊號',stormHelp:'救救我…',stormLost:'連線已中斷',stormSeen:'它找到你了',"chapter4":"窗簾後的取景器","chapter5":"不要回第四聲","label4":"SCAN / CAPTURE","label5":"LISTEN / REPEAT","instruction4":"滑動光圈或傾斜手機。對準異狀，再按捕捉。找齊三個，才能離開。","instruction5":"看門牌、聽敲聲。等它敲完，再依相同順序點三扇門。","hint4":"三個異狀在左上、右上、中下。光圈對準後按捕捉。它們是遊戲疊圖。","hint5":"門牌順序：3 → 1 → 2。靜音時也能看亮起的門牌。","cameraNotice":"可開後鏡頭探索，或用虛構暗房。只顯示即時畫面，不錄影、不儲存、不上傳，不用麥克風。異狀是遊戲疊圖，並非辨識你房間裡的東西。暫停或離開會關閉鏡頭。","cameraOpen":"開啟後鏡頭","cameraSkip":"使用虛構暗房","cameraStop":"關閉鏡頭","cameraActive":"鏡頭開啟 · 無錄影","cameraVirtual":"虛構暗房 · 可重新開鏡頭","cameraPending":"等待相機授權，可改用虛構暗房。","cameraUnavailable":"無法開啟相機。請用虛構暗房，或在 HTTPS 網址重試。","cameraCapture":"捕捉異狀","cameraMiss":"光圈裡沒有異狀。看看窗簾邊。","cameraFound":"它剛才不在這裡。","cameraNext":"離開取景器 →","cameraCount":"異狀 {count} / 3 · 無照片儲存","echoReplay":"重聽敲門聲","echoListening":"記住亮起的門牌","echoReady":"照順序點三扇門","echoWrong":"多了一聲。重新聽。","scareEcho":"誰在替你敲門？","echoNext":"回聲停了。門開了。",welcome:'小小探險室',minor:'未滿 18 歲',birthdayLabel:'未滿 18 歲禁止進入。生日月日（例：0101）：',birthdayHelp:'可填虛構日期，僅存本機。',lockedCopy:'密碼錯誤。怨靈已鎖定你的手機，請等待 30 秒…',lockedScope:'僅遊戲畫面鎖定。你仍可退出或關閉分頁，倒數不會重來。',scareFinal:'原來，是你的生日',gameCleared:'遊戲破關',curseMessage:'你以為你逃得掉嗎？這是你第 {count} 次來到這裡…',curseMemory:'同一扇門 · 它記得你',curseWarning:'仍有突然恐怖畫面與尖叫。請先降低音量，再選擇效果。',curseContinue:'面對它留下的記憶',cursePrivacy:'本機紀錄，非真實追蹤。第二關相機可拒絕，無錄影上傳；可隨時離開。',storageUnavailable:'瀏覽器無法保存紀錄；詛咒只在目前頁面有效。',scareCountdown:'你的時間到了',restTitle:'已離開',restCopy:'聲音、相機與感應器已停止。你可以關閉此分頁；遊戲紀錄仍留在這個瀏覽器。',returnEntry:'回到入口',title:'勿入',stamp:'慢慢來',tagline:'找個舒服的位置，依自己的步調開始。',warningTitle:'遊戲內容提醒',warningBody:'虛構恐怖解謎，含尖叫與模擬失控視窗。閃光及震動可選，可隨時退出。請先降低音量。',permissionTitle:'選擇想要的效果，耳機可自行準備',soundOption:'音效與尖叫',motionOption:'動作感應器（可選）',vibrateOption:'震動（可選）',flashOption:'短暫閃光（可選）',privacy:'觸控可通關。第二關可選相機，不錄影或傳送；不用麥克風與定位。',ack:'我已滿 18 歲、閱讀警告，願意進入。',start:'準備好了，開始',duration:'五關 · 約 4–6 分鐘',hint:'提示',pause:'暫停',paused:'已暫停',pauseCopy:'畫面、聲音與遊戲時間都已停止。準備好再回去。',resume:'繼續遊戲',exit:'退出',recenter:'校正',mute:'靜音',unmute:'開啟聲音',continue:'繼續',chapter1:'沒有人的走廊',chapter2:'牆後的名字',chapter3:'最後一扇門',label1:'LOOK / TOUCH',label2:'WIPE / REMEMBER',label3:'REMEMBER / OPEN',instruction1:'滑動光圈，照亮走廊。找到地上的小骷髏，輕點它。',instruction2:'牆壁上有血跡，快把它擦乾淨…',instruction2b:'繼續擦。牆上留下的，是你進門時寫的月日。',instruction3:'門後很安靜。它還記得你留下的四個數字。',search:'搜尋光圈位置',wipeAssist:'逐區擦拭',wallNext:'前往回聲房 →',lockTitle:'輸入能解開你靈魂束縛的 4 位數密碼…',clear:'清除',openDoor:'確認',hint1:'小骷髏在畫面左下方，靠近地面。角落還藏著一枚印記。',hint2:'在中間來回擦，停住手指不算。露出的日期是不是很熟悉？',hint3:'你在入口留下的生日月日。忘記時可用 0101。',touchMode:'觸控模式 · 滑動光圈',motionWaiting:'感應器等待中 · 仍可滑動',motionMode:'感應器模式 · 傾斜手機，校正可重設',motionDenied:'未允許感應器 · 已改為觸控',motionUnsupported:'沒有可用感應器 · 已改為觸控',motionInsecure:'此網址無法使用感應器 · 觸控仍可玩',motionTimeout:'未收到感應資料 · 已改為觸控',motionReset:'光圈已校正',audioBlocked:'聲音未啟動 · 可按「開啟聲音」重試',empty:'你碰到的不是出口。',close:'你離它很近了。再往左下找。',mark:'你帶走了一枚不該帶走的印記。',scareTrap:'別碰我的眼睛',scareWall:'還沒擦乾淨',needCode:'需要四個數字。',endingA:'01 / 02 · 回聲',endingB:'02 / 02 · 隱藏出口',endingTitleA:'你出去了。是嗎？',endingTitleB:'它沒有跟上來。',endingCopyA:'門外是同一條走廊。牆上的名字，變成了「下一個」。你沒有帶走印記，所以門也沒有帶你走。',endingCopyB:'手裡的印記裂成兩半。身後那道門第一次真正關上了。你聽見很輕的一句：下次，別替我開門。',replay:'再進入一次',share:'分享入口',shared:'入口已複製。',shareFailed:'無法自動分享；請複製瀏覽器網址。',shareFile:'請先上傳 GitHub Pages，再分享 HTTPS 網址。',shareText:'勿入：用手機照亮走廊、擦開牆上的秘密。你找到的是出口，還是下一個入口？',fiction:'本作為原創虛構遊戲。沒有真實追蹤、入侵或靈異事件。',wipeLabel:'擦拭進度',gameLabel:'勿入：恐怖解謎',navLabel:'語言選擇',controlsLabel:'遊戲控制',lockLabel:'四位數靈魂密碼鎖'},
+ en:{"stormTitle":"Help signal","stormHelp":"Help me…","stormLost":"Connection lost","stormSeen":"It found you","chapter4":"Behind the curtain","chapter5":"Don't answer the fourth knock","label4":"SCAN / CAPTURE","label5":"LISTEN / REPEAT","instruction4":"Move the light or tilt your phone. Aim at something odd, then tap Capture. Find all three.","instruction5":"Watch the numbers and listen. Once the knocking stops, tap the doors in the same order.","hint4":"Top left, top right, lower middle. Aim the light, then tap Capture. They're game effects.","hint5":"Tap 3 → 1 → 2. The numbers still light up with sound off.","cameraNotice":"Use your back camera or the game's room. It's just a live view: no recording, saving, uploads or mic. The strange things are game effects, not objects we're detecting. Pausing or leaving turns the camera off.","cameraOpen":"Use back camera","cameraSkip":"Use game room","cameraStop":"Turn camera off","cameraActive":"Camera on · Not recording","cameraVirtual":"Game room · Camera optional","cameraPending":"Waiting for permission. You can use the game's room instead.","cameraUnavailable":"Can't open the camera. Use the game's room or try an HTTPS link.","cameraCapture":"Capture","cameraMiss":"Nothing in the light. Try beside the curtain.","cameraFound":"That wasn't there a second ago.","cameraNext":"Leave the camera →","cameraCount":"Found {count} / 3 · No photos saved","echoReplay":"Hear it again","echoListening":"Remember which numbers light up","echoReady":"Tap the doors in that order","echoWrong":"One knock too many. Listen again.","scareEcho":"Who's knocking for you?","echoNext":"The echo's gone. The door's open.","welcome":"A little adventure","minor":"Under 18","birthdayLabel":"18+ only. Birthday code (MMDD):","birthdayHelp":"A made-up date is fine. It stays on this device.","lockedCopy":"Wrong code. The spirit's locked your phone. Wait 30 seconds…","lockedScope":"Only the game is locked. You can leave or close the tab. The timer keeps going.","scareFinal":"So… that's your birthday.","gameCleared":"You made it","curseMessage":"Thought you got away? You've been here {count} times…","curseMemory":"Same door. It remembers you.","curseWarning":"There are still sudden scares and screams. Turn the volume down, then pick your effects.","curseContinue":"Go back in","cursePrivacy":"Saved in this browser. Camera is optional in level 2, with no recording or uploads. Leave anytime.","storageUnavailable":"Your browser can't save this. The curse only lasts while this page is open.","scareCountdown":"Time's up","restTitle":"You've left","restCopy":"Sound, camera and sensors are off. You can close this tab. Your game history stays in this browser.","returnEntry":"Back to the entrance","title":"DO NOT ENTER","stamp":"Take your time","tagline":"Get comfy. Start whenever you're ready.","warningTitle":"Before you begin","warningBody":"Horror game with screams and fake browser glitches. Flashing and vibration are optional. You can leave anytime. Keep the volume low.","permissionTitle":"Pick your effects. Headphones are up to you.","soundOption":"Sound & screams","motionOption":"Motion (optional)","vibrateOption":"Vibration (optional)","flashOption":"Flash (optional)","privacy":"Touch works. Camera optional in level 2. No recording, uploads, mic or location.","ack":"I'm 18 or older, I've read the warning, and I want to play.","start":"Let's go","duration":"5 levels · About 4–6 min","hint":"Hint","pause":"Pause","paused":"Paused","pauseCopy":"Picture, sound and game time are paused. Come back when you're ready.","resume":"Resume","exit":"Exit","recenter":"Center","mute":"Mute","unmute":"Sound on","continue":"Continue","chapter1":"The empty corridor","chapter2":"The name behind the wall","chapter3":"The last door","label1":"LOOK / TOUCH","label2":"WIPE / REMEMBER","label3":"REMEMBER / OPEN","instruction1":"Move the light around. Find the little skull on the floor and tap it.","instruction2":"There's blood on the wall. Wipe it off…","instruction2b":"Keep wiping. It's the date you wrote down on your way in.","instruction3":"It's quiet behind the door. It still remembers your four numbers.","search":"Check the lit area","wipeAssist":"Wipe a section","wallNext":"Into the echo room →","lockTitle":"Four numbers. That's all it takes to free your soul…","clear":"Clear","openDoor":"Try code","hint1":"Look near the floor on the lower left. There's a hidden seal in another corner, too.","hint2":"Wipe the middle back and forth. Keeping your finger still won't help. Know that date?","hint3":"Use the birthday code you typed at the start. Forgot it? 0101 works too.","touchMode":"Touch · Move the light","motionWaiting":"Waiting for motion · You can still drag","motionMode":"Tilt your phone · Tap Center to reset","motionDenied":"Motion off · Use touch","motionUnsupported":"No motion sensor · Use touch","motionInsecure":"Motion won't work on this link · Use touch","motionTimeout":"No motion data · Use touch","motionReset":"Light's back in the center","audioBlocked":"No sound yet · Tap Sound on to try again","empty":"That's not the way out.","close":"You're close. Try farther down and left.","mark":"That seal wasn't yours to take.","scareTrap":"Don't touch my eyes.","scareWall":"You missed a spot.","needCode":"Type all four numbers.","endingA":"01 / 02 · Echo","endingB":"02 / 02 · Hidden exit","endingTitleA":"You got out… right?","endingTitleB":"It didn't follow you.","endingCopyA":"Same hallway. The name on the wall now says “NEXT”. You left the seal behind, so the door left you here.","endingCopyB":"The seal snaps in two in your hand. The door behind you finally shuts. A quiet voice says, “Next time… don't open the door for me.”","replay":"Go back in","share":"Share the way in","shared":"Link copied.","shareFailed":"Can't share right now. Copy the link from your browser.","shareFile":"Put the game on GitHub Pages first, then share its HTTPS link.","shareText":"DO NOT ENTER: light up the hallway and wipe away its secret. Is that the way out… or just another way in?","fiction":"This is a made-up horror game. No real tracking, hacking or ghosts.","wipeLabel":"Wiping progress","gameLabel":"Do Not Enter: horror puzzle","navLabel":"Choose language","controlsLabel":"Game controls","lockLabel":"Four-digit soul lock"},
+ ja:{"stormTitle":"助けを呼ぶ声","stormHelp":"助けて…","stormLost":"つながらない","stormSeen":"見つかっちゃった","chapter4":"カーテンの向こう","chapter5":"4回目には応えないで","label4":"SCAN / CAPTURE","label5":"LISTEN / REPEAT","instruction4":"光を動かすか、スマホを傾けて。異変に合わせて「見つけた」をタップ。3つ探そう。","instruction5":"番号とノックを覚えてね。音が止まったら、同じ順番で3つの扉をタップ。","hint4":"左上、右上、真ん中の下。光を合わせて「見つけた」をタップ。異変はゲームの演出だよ。","hint5":"順番は 3 → 1 → 2。音を消しても、光る番号でわかるよ。","cameraNotice":"背面カメラでも、ゲームの部屋でも遊べます。映像は表示するだけ。録画・保存・送信はせず、マイクも使いません。異変はゲームの演出で、部屋の物を認識しません。一時停止や終了でカメラも止まります。","cameraOpen":"背面カメラを使う","cameraSkip":"ゲームの部屋で遊ぶ","cameraStop":"カメラを止める","cameraActive":"カメラ使用中 · 録画していません","cameraVirtual":"ゲームの部屋 · カメラなしでもOK","cameraPending":"カメラの許可待ちです。ゲームの部屋でも遊べます。","cameraUnavailable":"カメラを開けません。ゲームの部屋で遊ぶか、HTTPSのページで試してください。","cameraCapture":"見つけた","cameraMiss":"光の中には何もいない。カーテンのそばを探して。","cameraFound":"さっきは、いなかったよね。","cameraNext":"カメラから出る →","cameraCount":"見つけた数 {count} / 3 · 写真は保存しません","echoReplay":"もう一度聞く","echoListening":"光った番号を覚えてね","echoReady":"同じ順番で扉をタップ","echoWrong":"一回、多かったね。もう一度聞いて。","scareEcho":"誰が代わりに叩いてるの？","echoNext":"もう聞こえない。扉が開いたよ。","welcome":"ちいさな冒険室","minor":"18 歳未満","birthdayLabel":"18歳以上のみ。誕生日の月日（例：0101）：","birthdayHelp":"架空の日付でOK。この端末にだけ保存します。","lockedCopy":"番号が違うよ。怨霊がスマホを閉じ込めた。30秒待ってね…","lockedScope":"止まるのはゲームだけ。終了やタブを閉じても、カウントは続きます。","scareFinal":"そっか…あなたの誕生日なんだ。","gameCleared":"ゲームクリア","curseMessage":"逃げられたと思った？ ここに来るのは {count} 回目だね…","curseMemory":"同じ扉。まだ、あなたを覚えてる。","curseWarning":"また突然の怖い画面や叫び声が出ます。音量を下げて、使う効果を選んでね。","curseContinue":"もう一度、入る","cursePrivacy":"記録はこのブラウザーだけ。2つ目の部屋のカメラは使わなくてもOK。録画・送信なし。いつでもやめられます。","storageUnavailable":"保存できません。呪いはこのページを開いている間だけだよ。","scareCountdown":"もう、時間だよ","restTitle":"ゲームを終了しました","restCopy":"音もカメラもセンサーも止まっています。タブを閉じて大丈夫。ゲームの記録はこのブラウザーに残ります。","returnEntry":"入口へ戻る","title":"立入禁止","stamp":"ごゆっくり","tagline":"落ち着く場所で、のんびりはじめよう。","warningTitle":"はじめる前に","warningBody":"架空のホラーゲームです。叫び声や、ブラウザーがおかしくなる演出があります。点滅・振動は選べます。いつでもやめてOK。音量は小さめに。","permissionTitle":"使う効果を選んでね。イヤホンはお好みで。","soundOption":"音と叫び声","motionOption":"スマホを傾けて操作","vibrateOption":"振動","flashOption":"点滅","privacy":"タッチだけで遊べます。2つ目の部屋のカメラは任意。録画や送信はせず、マイク・位置情報も使いません。","ack":"18歳以上です。注意書きを読んで、遊ぶことに同意します。","start":"準備できたら、はじめよう","duration":"5つの部屋 · 約4〜6分","hint":"ヒント","pause":"一時停止","paused":"一時停止中","pauseCopy":"画面も音もゲームの時間も止めてあるよ。準備ができたら戻ってきてね。","resume":"続ける","exit":"終了","recenter":"光を戻す","mute":"音を消す","unmute":"音を出す","continue":"続ける","chapter1":"誰もいない廊下","chapter2":"壁の向こうの名前","chapter3":"最後の扉","label1":"LOOK / TOUCH","label2":"WIPE / REMEMBER","label3":"REMEMBER / OPEN","instruction1":"光を動かして、床の小さなドクロを探してね。見つけたらタップ。","instruction2":"壁に血がついてる。早く拭いて…","instruction2b":"もう少し拭いて。これ、入口で書いた日付だよね。","instruction3":"扉の向こうは静かだね。あの4つの数字、まだ覚えてるよ。","search":"光の中を探す","wipeAssist":"少しずつ拭く","wallNext":"音のする部屋へ →","lockTitle":"魂を自由にしたいなら、4桁の数字を入れて…","clear":"消す","openDoor":"開けてみる","hint1":"ドクロは左下、床の近くだよ。別の隅には印も隠れてる。","hint2":"真ん中を行ったり来たりして拭いてね。指を止めると進まないよ。この日付、見覚えない？","hint3":"入口で入れた誕生日の月日だよ。忘れたら 0101 でも開くよ。","touchMode":"指で光を動かしてね","motionWaiting":"センサー待ち · 指でも動かせるよ","motionMode":"スマホを傾けて操作 ·「光を戻す」でリセット","motionDenied":"センサーは使わず、指で操作するよ","motionUnsupported":"センサーがないので、指で操作してね","motionInsecure":"このページではセンサーを使えません · 指で操作してね","motionTimeout":"センサーの反応がないので、指で操作してね","motionReset":"光を真ん中に戻したよ","audioBlocked":"音が出ていません ·「音を出す」で試してね","empty":"そこは出口じゃないよ。","close":"もう近いよ。もう少し左下を探して。","mark":"その印、持っていっちゃだめなのに。","scareTrap":"私の目、触らないで。","scareWall":"まだ、残ってるよ。","needCode":"数字を4つ入れてね。","endingA":"01 / 02 · こだま","endingB":"02 / 02 · 隠された出口","endingTitleA":"外に出た…よね？","endingTitleB":"あれは、ついてこなかった。","endingCopyA":"扉を開けたら、また同じ廊下。壁の名前は「次の人」に変わってる。印を置いてきたから、扉はあなたを外に出してくれなかった。","endingCopyB":"手の中で印が真っ二つに割れた。後ろの扉が、今度こそ閉まる。小さな声が聞こえた。「次は、私のために開けないでね」","replay":"もう一度入る","share":"入口をシェア","shared":"リンクをコピーしたよ。","shareFailed":"シェアできませんでした。ブラウザーのURLをコピーしてね。","shareFile":"まずGitHub Pagesに公開してから、HTTPSのリンクをシェアしてね。","shareText":"立入禁止：廊下を照らして、壁の秘密を拭き出そう。それ、本当に出口？ それとも、また入口？","fiction":"このゲームは作り話です。本当に追跡したり、侵入したりするものではありません。心霊現象も演出です。","wipeLabel":"どれだけ拭けた？","gameLabel":"立入禁止：ホラーパズル","navLabel":"言語を選ぶ","controlsLabel":"ゲーム操作","lockLabel":"四桁の魂の暗証番号"}
 };
 let lang='zh';
 try{const requested=new URL(location.href).searchParams.get('lang');lang=Object.hasOwn(TEXT,requested)?requested:(navigator.language.startsWith('ja')?'ja':navigator.language.startsWith('en')?'en':'zh')}catch{}
 const tr=key=>TEXT[lang][key]||key;
 const state={mode:'intro',session:0,paused:false,clock:0,stageStart:0,misses:0,seal:false,trapped:false,wallScared:false,wipeTime:0,coverage:0,code:'',wrong:0,scare:null,toastKey:'',toastUntil:0,consent:{sound:false,motion:false,vibrate:false,flash:false},muted:true,runCursed:false,heavyCurse:false,countdownScared:false,victory:false};
 let W=390,H=780,DPR=1,area={x:0,y:95,w:390,h:525},light={x:195,y:390},targetLight={x:195,y:390};
-const world=$('world'),ctx=world.getContext('2d',{alpha:false}),veil=$('veil'),vctx=veil.getContext('2d');
+const world=$('world'),ctx=world.getContext('2d'),veil=$('veil'),vctx=veil.getContext('2d');
 const cachedScene=document.createElement('canvas'),cachedMask=document.createElement('canvas');
 const sceneCtx=cachedScene.getContext('2d'),maskCtx=cachedMask.getContext('2d');
 let lastFrame=0,raf=0,frameCosts=[],gesture=null,strokes=[],cells=new Uint8Array(40*56),clearedCells=0,assistIndex=0;
@@ -345,22 +361,57 @@ function setLanguage(next,updateURL=true){
  document.querySelector('.toolbar').setAttribute('aria-label',tr('controlsLabel'));$('lockPanel').setAttribute('aria-label',tr('lockLabel'));$('wipeProgress').setAttribute('aria-label',tr('wipeLabel'));
  $('language').textContent={zh:'中文',en:'EN',ja:'日本語'}[lang];$('lockoutLanguage').textContent=$('language').textContent;
  if(updateURL){try{const u=new URL(location.href);u.searchParams.set('lang',lang);history.replaceState(null,'',u.href)}catch{}}
- renderCurseText();updateUI();if(sensor.status)$('sensorStatus').textContent=tr(sensor.status);if(state.toastKey)$('toast').textContent=tr(state.toastKey);
+ renderCurseText();updateUI();if(sensor.status&&state.mode!=='scan')$('sensorStatus').textContent=tr(sensor.status);if(state.toastKey)$('toast').textContent=tr(state.toastKey);
  if(state.scare)$('scareCaption').textContent=tr(state.scare.key);if(state.mode==='ending')renderEnding();
 }
 function updateUI(){
  pageTone();
- const n={corridor:1,wall:2,lock:3}[state.mode]||1;
- $('chapterNumber').textContent=`0${n} / 03`;$('chapterTitle').textContent=tr('chapter'+n);
+ const n={corridor:1,wall:2,lock:3,scan:4,echo:5}[state.mode]||1,chapter={corridor:1,scan:2,wall:3,echo:4,lock:5}[state.mode]||1;
+ $('chapterNumber').textContent=`0${chapter} / 05`;$('chapterTitle').textContent=tr('chapter'+n);
  $('instructionLabel').textContent=tr('label'+n);$('instruction').textContent=tr(n===2&&state.wallScared?'instruction2b':'instruction'+n);
  $('stageAction').textContent=tr(n===1?'search':n===2?'wipeAssist':'wallNext');
- $('stageAction').hidden=n===3;$('recenter').disabled=n!==1;
+ $('stageAction').hidden=n===3;$('recenter').disabled=![1,4].includes(n);$('scanTools').hidden=n!==4;$('echoPanel').hidden=n!==5;if(n===4){$('stageAction').textContent=tr(scan.found.size===3?'cameraNext':'cameraCapture');$('scanCount').textContent=tr('cameraCount').replace('{count}',scan.found.size);$('cameraToggle').textContent=tr(camera.active?'cameraStop':'cameraOpen');$('sensorStatus').textContent=tr(camera.active?'cameraActive':'cameraVirtual')}if(n===5){$('stageAction').textContent=tr('echoReplay');updateEchoUI()}
  $('wipeProgress').hidden=n!==2;const pc=Math.round(state.coverage*100);$('wipeFill').style.width=pc+'%';$('wipeProgress').setAttribute('aria-valuenow',String(pc));
  if(n===2&&state.wallScared&&state.coverage>=.42){$('stageAction').textContent=tr('wallNext');$('stageAction').classList.add('primary')}else $('stageAction').classList.remove('primary');
  const soundLabel=tr(state.muted?'unmute':'mute');$('mute').textContent=soundLabel;$('scareMute').textContent=soundLabel;
  $('mute').setAttribute('aria-pressed',String(state.muted));$('scareMute').setAttribute('aria-pressed',String(state.muted));
 }
 function say(key,seconds=3){state.toastKey=key;state.toastUntil=state.clock+seconds;$('toast').textContent=tr(key)}
+
+
+/* ---- 選用素材：和 HTML 同來源、按需載入，不阻塞入口／開始手勢。 ---- */
+const MATERIALS={room:'assets/curtain-room.webp',knock:'assets/door-knock.wav',face:'assets/window-ghost.webp'};
+const materials={room:null,roomStatus:'idle',knock:null,knockStatus:'idle',face:null,faceStatus:'idle',controller:null,knockPlays:0};
+function loadRoom(){
+ if(materials.roomStatus!=='idle')return;materials.roomStatus='loading';const img=new Image();img.decoding='async';
+ img.onload=()=>{materials.room=img;materials.roomStatus='ready';if(state.mode==='scan')buildScanRoom();};
+ // 404、離線或 WebP 不支援：原有程序窗簾場景仍可玩，不等待重試。
+ img.onerror=()=>{materials.roomStatus='fallback';};img.src=MATERIALS.room;
+}
+function loadFace(){
+ // 第一次驚嚇前才下載；失敗仍用程序鬼臉，不阻塞事件或入口。
+ if(materials.faceStatus!=='idle')return;materials.faceStatus='loading';const img=new Image();img.decoding='async';
+ img.onload=()=>{materials.face=img;materials.faceStatus='ready'};img.onerror=()=>{materials.faceStatus='fallback'};img.src=MATERIALS.face;
+}
+async function loadKnock(a){
+ if(!a||materials.knock||materials.knockStatus==='loading'||!state.consent.sound)return;
+ const controller=new AbortController();materials.controller=controller;materials.knockStatus='loading';
+ try{const response=await fetch(MATERIALS.knock,{signal:controller.signal,credentials:'omit'});if(!response.ok)throw Error('Missing optional sound');const bytes=await response.arrayBuffer();if(materials.controller!==controller||sound.ctx!==a)return;
+  const buffer=await a.decodeAudioData(bytes);if(materials.controller!==controller||sound.ctx!==a)return;materials.knock=buffer;materials.knockStatus='ready';
+ }catch(e){if(materials.controller===controller)materials.knockStatus=e.name==='AbortError'?'idle':'fallback';}
+ finally{if(materials.controller===controller)materials.controller=null;}
+}
+function cancelKnockLoad(){if(!materials.controller)return;materials.controller.abort();materials.controller=null;materials.knockStatus='idle';}
+function playKnock(pan=0){
+ if(state.muted||state.paused||!state.consent.sound||state.scare)return;
+ const a=sound.ctx;if(!a||a.state!=='running')return;
+ if(!materials.knock){tone(150,.08,.14,'triangle');tone(90,.1,.12,'triangle',.14);return;}
+ const source=a.createBufferSource(),filter=a.createBiquadFilter(),g=a.createGain(),p=a.createStereoPanner?.();
+ source.buffer=materials.knock;source.playbackRate.value=state.runCursed?.82:.94;filter.type='lowpass';filter.frequency.value=2100;g.gain.value=.48;
+ source.connect(filter);if(p){p.pan.value=clamp(pan,-1,1);filter.connect(p);p.connect(g);}else filter.connect(g);g.connect(sound.master);
+ // 接同一 master 和 effects，靜音／暫停／退出／驚嚇前靜默都管得到實錄素材。
+ trackEffect(source);source.start();source.stop(a.currentTime+source.buffer.duration/source.playbackRate.value+.04);materials.knockPlays++;
+}
 
 /* ---- 音訊：開始手勢內同步 resume 與 HTMLAudio.play，不先 await 權限 ---- */
 const sound={ctx:null,master:null,ambient:null,noise:null,screamBuffer:null,media:null,enabled:false,effects:new Set()};
@@ -381,6 +432,7 @@ function unlockAudio(){
   if(!sound.ctx){const AC=window.AudioContext||window.webkitAudioContext;if(AC){sound.ctx=new AC();sound.master=sound.ctx.createGain();const limiter=sound.ctx.createDynamicsCompressor();limiter.threshold.value=-4;limiter.knee.value=4;limiter.ratio.value=12;sound.master.connect(limiter);limiter.connect(sound.ctx.destination);sound.master.gain.value=0;
    const rate=sound.ctx.sampleRate,noise=sound.ctx.createBuffer(1,rate*2,rate),data=noise.getChannelData(0);for(let i=0;i<data.length;i++)data[i]=Math.random()*2-1;sound.noise=noise;
   }}
+  if(sound.ctx)void loadKnock(sound.ctx);
   const resume=sound.ctx?sound.ctx.resume():Promise.resolve();
   // 不等待網路；合成尖叫的 HTMLAudio 備用檔只建一次，稍後 play().catch 處理。
   return Promise.allSettled([resume,mediaUnlock||Promise.resolve()]).then(results=>{if(session!==state.session||isEntry()||!state.consent.sound)return false;sound.media.pause();sound.media.src=ASSETS.enabled?ASSETS.scream:sound.screamBuffer;setAudioRate();sound.media.volume=1.0;sound.enabled=!!sound.ctx&&sound.ctx.state==='running'||results[1].status==='fulfilled';if(!sound.enabled){state.muted=true;updateUI();say('audioBlocked',5)}return sound.enabled});
@@ -389,8 +441,8 @@ function unlockAudio(){
 function gain(value){if(!sound.ctx||!sound.master)return;sound.master.gain.cancelScheduledValues(sound.ctx.currentTime);sound.master.gain.setValueAtTime(value,sound.ctx.currentTime)}
 function trackEffect(node){sound.effects.add(node);node.onended=()=>sound.effects.delete(node)}
 function silenceEffects(){for(const node of sound.effects){try{node.stop()}catch{}}sound.effects.clear();sound.media?.pause()}
-function tone(freq,duration=.15,level=.07,type='sine',delay=0){if(!sound.ctx||state.muted||state.paused||state.scare&&!state.scare.shown)return;const a=sound.ctx,o=a.createOscillator(),g=a.createGain(),t=a.currentTime+delay;o.type=type;o.frequency.setValueAtTime(freq,t);o.frequency.exponentialRampToValueAtTime(Math.max(25,freq*.55),t+duration);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(level,t+.008);g.gain.exponentialRampToValueAtTime(.001,t+duration);o.connect(g);g.connect(sound.master);trackEffect(o);o.start(t);o.stop(t+duration+.04)}
-function startAmbient(){if(!sound.ctx||sound.ambient)return;const a=sound.ctx,source=a.createBufferSource(),filter=a.createBiquadFilter(),g=a.createGain();source.buffer=sound.noise;source.loop=true;source.playbackRate.value=state.runCursed?.5:1;filter.type='lowpass';filter.frequency.value=240;g.gain.value=.14;source.connect(filter);filter.connect(g);g.connect(sound.master);source.start();sound.ambient={source,filter,g};gain(state.muted||state.paused||state.scare&&!state.scare.shown?0:1)}
+function tone(freq,duration=.15,level=.07,type='sine',delay=0){if(!sound.ctx||state.muted||state.paused||scareQuiet())return;const a=sound.ctx,o=a.createOscillator(),g=a.createGain(),t=a.currentTime+delay;o.type=type;o.frequency.setValueAtTime(freq,t);o.frequency.exponentialRampToValueAtTime(Math.max(25,freq*.55),t+duration);g.gain.setValueAtTime(0,t);g.gain.linearRampToValueAtTime(level,t+.008);g.gain.exponentialRampToValueAtTime(.001,t+duration);o.connect(g);g.connect(sound.master);trackEffect(o);o.start(t);o.stop(t+duration+.04)}
+function startAmbient(){if(!sound.ctx||sound.ambient)return;const a=sound.ctx,source=a.createBufferSource(),filter=a.createBiquadFilter(),g=a.createGain();source.buffer=sound.noise;source.loop=true;source.playbackRate.value=state.runCursed?.5:1;filter.type='lowpass';filter.frequency.value=240;g.gain.value=.14;source.connect(filter);filter.connect(g);g.connect(sound.master);source.start();sound.ambient={source,filter,g};gain(state.muted||state.paused||scareQuiet()?0:1)}
 function scream(){
  if(state.muted||!state.consent.sound||state.paused)return;
  // 1.0 是網頁音量，不能也不會修改手機的實體音量。
@@ -400,14 +452,14 @@ function scream(){
  }else if(sound.media){sound.media.currentTime=0;sound.media.volume=1.0;sound.media.play()?.catch(()=>say('audioBlocked',5))}
 }
 function toggleMute(){
- if(state.muted){state.consent.sound=true;state.muted=false;void unlockAudio().then(()=>{if(!isEntry()&&!state.paused){startAmbient();gain(state.scare&&!state.scare.shown?0:1)}})}else{state.muted=true;gain(0);sound.media?.pause()}
+ if(state.muted){state.consent.sound=true;state.muted=false;void unlockAudio().then(()=>{if(!isEntry()&&!state.paused){startAmbient();gain(scareQuiet()?0:1)}})}else{state.muted=true;cancelKnockLoad();gain(0);sound.media?.pause()}
  updateUI();
 }
-function stopAudio(){gain(0);silenceEffects();sound.ambient=null;const old=sound.ctx;sound.ctx=null;sound.master=null;sound.enabled=false;old?.close().catch(()=>{});}
+function stopAudio(){cancelKnockLoad();gain(0);silenceEffects();sound.ambient=null;const old=sound.ctx;sound.ctx=null;sound.master=null;sound.enabled=false;old?.close().catch(()=>{});}
 
 /* ---- 感應器：未勾選時完全不註冊。iOS 請求需在 click 同步階段呼叫 ---- */
 const sensor={status:'touchMode',listening:false,base:null,lastAt:0,received:false,token:0,touchUntil:0};
-function setSensorStatus(key){sensor.status=key;$('sensorStatus').textContent=tr(key)}
+function setSensorStatus(key){sensor.status=key;$('sensorStatus').textContent=tr(state.mode==='scan'?(camera.active?'cameraActive':'cameraVirtual'):key)}
 function stopSensor(){window.removeEventListener('deviceorientation',onOrientation);sensor.listening=false;sensor.base=null;sensor.token++;}
 function fallbackMotion(key){stopSensor();setSensorStatus(key)}
 function attachSensor(token){if(token!==sensor.token||isEntry()||!state.consent.motion)return;sensor.listening=true;sensor.received=false;sensor.lastAt=performance.now();window.addEventListener('deviceorientation',onOrientation,{passive:true});setSensorStatus('motionWaiting')}
@@ -423,7 +475,7 @@ function requestMotion(){
  }else attachSensor(token)}catch{fallbackMotion('motionDenied')}
 }
 function onOrientation(event){
- if(state.paused||state.mode!=='corridor'||!sensor.listening)return;
+ if(state.paused||!['corridor','scan'].includes(state.mode)||!sensor.listening)return;
  // Android 常回傳 null；不能把 null 轉成 0 當作有效感應器。
  if(!Number.isFinite(event.beta)||!Number.isFinite(event.gamma))return;
  const now=performance.now();sensor.received=true;sensor.lastAt=now;if(sensor.status!=='motionMode')setSensorStatus('motionMode');
@@ -476,7 +528,7 @@ function drawCorridor(){
 }
 function updateGrain(){const c=$('grain').getContext('2d'),im=c.createImageData(128,192);for(let i=0;i<im.data.length;i+=4){const v=Math.random()*255;im.data[i]=v;im.data[i+1]=v;im.data[i+2]=v;im.data[i+3]=150}c.putImageData(im,0,0)}
 function draw(){
- if(state.mode==='wall')drawWall();else if(state.mode==='lock')drawLock();else drawCorridor();
+ if(state.mode==='scan')drawScan();else if(state.mode==='echo')drawEcho();else if(state.mode==='wall')drawWall();else if(state.mode==='lock')drawLock();else drawCorridor();
  tape(ctx);if(state.scare?.shown)drawScare();
 }
 function loop(now){
@@ -486,16 +538,16 @@ function loop(now){
  light.x+=(targetLight.x-light.x)*.25;light.y+=(targetLight.y-light.y)*.25;draw();
  if(Math.floor(now/160)%2===0&&!reducedMotion.matches)updateGrain();
  if(state.toastKey&&state.clock>state.toastUntil){state.toastKey='';$('toast').textContent=''}
- if(sensor.listening&&state.mode==='corridor'&&now-sensor.lastAt>4500)fallbackMotion('motionTimeout');
+ if(sensor.listening&&['corridor','scan'].includes(state.mode)&&now-sensor.lastAt>4500)fallbackMotion('motionTimeout');
  frameCosts.push(performance.now()-start);if(frameCosts.length>300)frameCosts.shift();
 }
 
 /* ---- 手機事件：touchmove 防預設捲動；touchend 只接受真正的輕點 ---- */
 function beginGesture(x,y,id){
- if(!['corridor','wall'].includes(state.mode)||state.paused||state.scare)return;
+ if(!['corridor','wall','scan'].includes(state.mode)||state.paused||state.scare)return;
  gesture={id,x,y,startX:x,startY:y,maxDistance:0,began:performance.now(),lastMove:performance.now()};moveLight(x,y);
 }
-function moveLight(x,y){if(state.mode==='corridor'){sensor.touchUntil=performance.now()+1000;targetLight={x:clamp(x,0,W),y:clamp(y,area.y,area.y+area.h)}}}
+function moveLight(x,y){if(['corridor','scan'].includes(state.mode)){sensor.touchUntil=performance.now()+1000;targetLight={x:clamp(x,0,W),y:clamp(y,area.y,area.y+area.h)}}}
 function moveGesture(x,y,id){
  if(!gesture||gesture.id!==id||state.paused||state.scare)return;
  const prev={x:gesture.x,y:gesture.y},now=performance.now(),distance=Math.hypot(x-prev.x,y-prev.y);gesture.maxDistance=Math.max(gesture.maxDistance,Math.hypot(x-gesture.startX,y-gesture.startY));moveLight(x,y);
@@ -523,7 +575,7 @@ for(const name of ['gesturestart','gesturechange','gestureend'])document.addEven
 document.addEventListener('touchmove',e=>{if(e.touches.length>1&&e.cancelable)e.preventDefault()},{passive:false});
 function hitTest(x,y){
  const skull=pos(.4,.7),seal=pos(.76,.83),trap=pos(.79,.4);
- if(Math.hypot(x-skull.x,y-skull.y)<24){tone(120,.2,.1);enterWall();return}
+ if(Math.hypot(x-skull.x,y-skull.y)<24){tone(120,.2,.1);enterScan();return}
  if(!state.seal&&Math.hypot(x-seal.x,y-seal.y)<24){state.seal=true;say('mark',4);tone(480,.25,.07);return}
  if(!state.trapped&&Math.hypot(x-trap.x,y-trap.y)<30){state.trapped=true;triggerScare('scareTrap',true);return}
  state.misses++;say(state.misses>=5?'close':'empty',2);tone(65,.13,.03);
@@ -543,18 +595,78 @@ function startGame(){
  strokes=[];cells.fill(0);clearedCells=0;assistIndex=0;buildScene();resize();updateUI();$('stageAction').focus({preventScroll:true});
 }
 function exitGame(){
+ stopCamera();$('cameraChoice').hidden=true;
  if(state.mode==='locked'){leaveLockout();return}state.session++;
  cancelPurification();state.mode='intro';state.paused=false;state.scare=null;state.toastKey='';gesture=null;stopSensor();stopAudio();
  if(typeof navigator.vibrate==='function')navigator.vibrate(0);
  for(const id of ['gameUI','lockPanel','scare','pauseScreen','ending'])$(id).hidden=true;
- for(const id of ['gameUI','lockPanel','scare'])$(id).inert=false;
+ for(const id of ['gameUI','lockPanel','scare','cameraChoice'])$(id).inert=false;
  renderEntry();if(state.victory){saveCurse();state.victory=false}$('toast').textContent='';vctx.clearRect(0,0,W,H);document.body.classList.remove('paused');buildScene();resize();$(state.mode==='curse'?'curseMessage':'acknowledge').focus({preventScroll:true});
 }
-function pauseGame(){if(isEntry()||state.mode==='ending'||state.paused)return;state.paused=true;gesture=null;sound.ctx?.suspend().catch(()=>{});sound.media?.pause();if(typeof navigator.vibrate==='function')navigator.vibrate(0);$('gameUI').inert=true;$('lockPanel').inert=true;$('scare').inert=true;$('pauseScreen').hidden=false;document.body.classList.add('paused');$('resume').focus({preventScroll:true});}
-function resumeGame(){if(!state.paused)return;state.paused=false;lastFrame=performance.now();if(sound.ctx)void sound.ctx.resume().then(()=>gain(state.muted||state.scare&&!state.scare.shown?0:1)).catch(()=>say('audioBlocked',5));sensor.base=null;sensor.lastAt=performance.now();$('pauseScreen').hidden=true;$('gameUI').inert=!!state.scare?.shown;$('lockPanel').inert=!!state.scare?.shown;$('scare').inert=false;document.body.classList.remove('paused');(state.scare?.shown?$('scareContinue'):$('pause')).focus({preventScroll:true});}
+function pauseGame(){if(isEntry()||state.mode==='ending'||state.paused)return;state.paused=true;gesture=null;stopCamera();if(state.mode==='scan'){setSensorStatus('cameraVirtual');updateUI()}sound.ctx?.suspend().catch(()=>{});sound.media?.pause();if(typeof navigator.vibrate==='function')navigator.vibrate(0);$('cameraChoice').inert=true;$('gameUI').inert=true;$('lockPanel').inert=true;$('scare').inert=true;$('pauseScreen').hidden=false;document.body.classList.add('paused');$('resume').focus({preventScroll:true});}
+function resumeGame(){if(!state.paused)return;state.paused=false;lastFrame=performance.now();if(sound.ctx)void sound.ctx.resume().then(()=>gain(state.muted||scareQuiet()?0:1)).catch(()=>say('audioBlocked',5));sensor.base=null;sensor.lastAt=performance.now();$('cameraChoice').inert=false;$('cameraOpen').disabled=false;$('pauseScreen').hidden=true;$('gameUI').inert=!!state.scare?.shown||!$('cameraChoice').hidden;$('lockPanel').inert=!!state.scare?.shown;$('scare').inert=false;document.body.classList.remove('paused');(state.scare?.shown?$('scareContinue'):!$('cameraChoice').hidden?$('cameraOpen'):$('pause')).focus({preventScroll:true});}
 
-/* ---- 第二關：destination-out 擦除；累積「真正移動」三秒，不用牆鐘計時 ---- */
-function enterWall(){state.mode='wall';state.stageStart=state.clock;gesture=null;stopSensor();setSensorStatus('');buildBlood();updateUI();say('instruction2',3);$('stageAction').focus({preventScroll:true})}
+
+/* ---- 第二關：相機探索。只在玩家明確點擊後請求 video，audio:false 不請求麥克風。 ---- */
+const camera={stream:null,active:false,pending:false,token:0};
+const scan={found:new Set(),spots:[[.18,.26],[.80,.34],[.52,.74]],room:document.createElement('canvas')};
+// token 保護非同步權限：即使玩家先退出、之後才按同意，晚到的 tracks 也會停止。
+function stopCamera(){camera.token++;camera.pending=false;camera.active=false;camera.stream?.getTracks().forEach(t=>t.stop());camera.stream=null;const v=$('cameraFeed');v.pause();v.srcObject=null;v.hidden=true;}
+function cameraCurrent(token){return token===camera.token&&state.mode==='scan'&&!state.paused&&!document.hidden;}
+function openCamera(){
+ if(state.mode!=='scan'||state.paused||state.scare||camera.pending)return;
+ stopCamera();const token=camera.token;camera.pending=true;$('gameUI').inert=true;$('cameraChoice').hidden=false;$('cameraError').textContent=tr('cameraPending');$('cameraOpen').disabled=true;
+ if(!isSecureContext||!navigator.mediaDevices?.getUserMedia){cameraFailure(token);return;}
+ // 這行仍在 click 同步堆疊，Safari 可辨識玩家手勢。沒有拍照、MediaRecorder 或網路送出。
+ let request;try{request=navigator.mediaDevices.getUserMedia({video:{facingMode:{ideal:'environment'},width:{ideal:640},height:{ideal:480},frameRate:{ideal:24,max:30}},audio:false});}catch{cameraFailure(token);return;}
+ requestMotion();
+ request.then(async stream=>{
+  if(!cameraCurrent(token)){stream.getTracks().forEach(t=>t.stop());return;}
+  camera.stream=stream;const v=$('cameraFeed');v.srcObject=stream;v.muted=true;
+  try{await v.play();}catch{cameraFailure(token);return;}
+  if(!cameraCurrent(token))return;
+  camera.pending=false;camera.active=true;v.hidden=false;$('cameraOpen').disabled=false;$('cameraChoice').hidden=true;$('gameUI').inert=false;updateUI();$('stageAction').focus({preventScroll:true});
+  stream.getVideoTracks().forEach(track=>track.addEventListener('ended',()=>{if(camera.stream===stream){stopCamera();updateUI();say('cameraUnavailable',5);}}));
+ }).catch(()=>cameraFailure(token));
+}
+function cameraFailure(token){if(!cameraCurrent(token))return;stopCamera();$('cameraOpen').disabled=false;$('cameraError').textContent=tr('cameraUnavailable');updateUI();}
+function virtualRoom(){if(state.mode!=='scan'||state.paused||state.scare)return;stopCamera();$('cameraOpen').disabled=false;$('cameraChoice').hidden=true;$('gameUI').inert=false;requestMotion();updateUI();$('stageAction').focus({preventScroll:true});}
+function enterScan(){stopSensor();state.mode='scan';state.stageStart=state.clock;gesture=null;scan.found.clear();targetLight={x:W/2,y:area.y+area.h/2};light={...targetLight};loadRoom();buildScanRoom();vctx.clearRect(0,0,W,H);updateUI();$('cameraError').textContent='';$('cameraOpen').disabled=false;$('gameUI').inert=true;$('cameraChoice').hidden=false;$('cameraOpen').focus({preventScroll:true});}
+// 虛構房間取材自窗簾暗房的視覺氣氛，不把玩家照片或附圖當成真實靈異素材。
+function buildScanRoom(){const c=scan.room;c.width=Math.round(W*DPR);c.height=Math.round(H*DPR);const d=c.getContext('2d');d.setTransform(DPR,0,0,DPR,0,0);d.fillStyle='#111b18';d.fillRect(0,0,W,H);if(materials.room){const im=materials.room,k=Math.max(W/im.naturalWidth,H/im.naturalHeight);d.drawImage(im,(W-im.naturalWidth*k)/2,(H-im.naturalHeight*k)/2,im.naturalWidth*k,im.naturalHeight*k);d.fillStyle='#06170d20';d.fillRect(0,0,W,H);return;}const r=seeded(802);
+ d.fillStyle='#080d0d';d.fillRect(W*.08,area.y,W*.19,area.h*.88);d.fillStyle='#1d2823';d.fillRect(W*.29,area.y,W*.68,area.h*.84);
+ for(let y=area.y;y<area.y+area.h*.83;y+=18){d.strokeStyle='#52635440';d.beginPath();d.moveTo(W*.29,y);d.lineTo(W*.95,y-10);d.stroke();}
+ for(let x=W*.49;x<W*.94;x+=W*.028){d.fillStyle=`rgba(5,12,10,${.25+r()*.55})`;d.fillRect(x,area.y+10,W*.015,area.h*.73);for(let y=area.y+20;y<area.y+area.h*.71;y+=22){d.fillStyle='#89917a24';d.fillRect(x,y,3,6);}}
+ d.fillStyle='#0b100e';d.beginPath();d.moveTo(0,area.y+area.h);d.lineTo(W*.29,area.y+area.h*.82);d.lineTo(W*.94,area.y+area.h*.82);d.lineTo(W,area.y+area.h);d.fill();
+ d.strokeStyle='#6c715724';for(let i=0;i<7;i++){d.beginPath();d.moveTo(W*.6,area.y+area.h*.81);d.lineTo(i*W*.20,area.y+area.h);d.stroke();}}
+function drawScan(){
+ vctx.clearRect(0,0,W,H);if(scan.room.width!==Math.round(W*DPR)||scan.room.height!==Math.round(H*DPR))buildScanRoom();
+ ctx.clearRect(0,0,W,H);if(camera.active){ctx.fillStyle='#00140f35';ctx.fillRect(0,0,W,H);}else ctx.drawImage(scan.room,0,0,W,H);
+ const t=state.clock-state.stageStart;ctx.save();ctx.font='12px ui-monospace,monospace';ctx.fillStyle='#cbd5be';ctx.textAlign='left';ctx.fillText('1998-08-08   19:05:'+String(Math.floor(t)%60).padStart(2,'0'),20,area.y+88);
+ for(let i=0;i<3;i++){if(scan.found.has(i))continue;const p=pos(...scan.spots[i]),near=Math.hypot(light.x-p.x,light.y-p.y)<beamRadius();ctx.save();ctx.translate(p.x,p.y);ctx.globalAlpha=near?.85:.14;
+  if(i===0){ctx.fillStyle='#a6b2a0';ctx.strokeStyle='#b6c2ae';ctx.lineWidth=2;for(let f=0;f<5;f++){ctx.beginPath();ctx.moveTo(-15+f*7,18);ctx.lineTo(-20+f*8,-15-(f%3)*8);ctx.stroke();}ctx.beginPath();ctx.ellipse(0,18,19,10,0,0,Math.PI*2);ctx.fill();}
+  else if(i===1){ctx.drawImage(ghost,-22,-38,44,62);}
+  else{ctx.fillStyle='#c1c3a7';ctx.font='28px Georgia,serif';ctx.textAlign='center';ctx.fillText('◉',0,10);ctx.strokeStyle='#b84c4960';ctx.strokeRect(-18,-23,36,43);}ctx.restore();}
+ ctx.strokeStyle='#d7dbc7';ctx.lineWidth=1;ctx.beginPath();ctx.arc(light.x,light.y,27,0,Math.PI*2);ctx.moveTo(light.x-38,light.y);ctx.lineTo(light.x+38,light.y);ctx.moveTo(light.x,light.y-38);ctx.lineTo(light.x,light.y+38);ctx.stroke();ctx.restore();
+ // 暗角只罩遊戲畫面，HUD 按鈕不跟著變暗。
+ const g=ctx.createRadialGradient(light.x,light.y,30,light.x,light.y,Math.max(W,H)*.65);g.addColorStop(0,'#0000');g.addColorStop(1,'#000d');ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
+}
+function captureAnomaly(){if(state.mode!=='scan'||state.paused||state.scare||!$('cameraChoice').hidden)return;if(scan.found.size===3){enterWall();return;}const i=scan.spots.findIndex((spot,index)=>!scan.found.has(index)&&Math.hypot(light.x-pos(...spot).x,light.y-pos(...spot).y)<Math.max(32,beamRadius()*.65));
+ if(i<0){say('cameraMiss',3);tone(75,.1,.03);return;}scan.found.add(i);tone(530,.08,.08,'triangle');say('cameraFound',2);updateUI();}
+/* ---- 第四關：敲門次序。以遊戲時鐘排程，不用背景 setTimeout，暫停不偷跑。 ---- */
+const echo={order:[2,0,1],start:0,index:-1,ready:false,input:[],scared:false};
+function enterEcho(){stopSensor();setSensorStatus('');state.mode='echo';state.stageStart=state.clock;gesture=null;echo.scared=false;updateUI();replayEcho();}
+function replayEcho(){if(state.mode!=='echo'||state.paused||state.scare)return;echo.start=state.clock;echo.index=-1;echo.ready=false;echo.input=[];updateEchoUI();}
+function tickEcho(){if(echo.ready)return;const elapsed=state.clock-echo.start,index=Math.floor((elapsed-.5)/1.15);if(index>=3){echo.ready=true;updateEchoUI();return;}if(index>=0&&index!==echo.index){echo.index=index;playKnock((echo.order[index]-1)*.7);updateEchoUI();}}
+function updateEchoUI(){const lit=!echo.ready&&echo.index>=0?echo.order[echo.index]:-1;document.querySelectorAll('[data-echo]').forEach(b=>{b.disabled=!echo.ready;b.classList.toggle('lit',Number(b.dataset.echo)===lit);});$('echoReadout').textContent=echo.ready?tr('echoReady')+' · '+echo.input.map(i=>i+1).join(' / '):tr('echoListening')+(lit>=0?' · '+(lit+1):'');}
+function answerEcho(i){if(state.mode!=='echo'||state.paused||state.scare||!echo.ready)return;if(i!==echo.order[echo.input.length]){echo.input=[];say('echoWrong',3);if(!echo.scared){echo.scared=true;triggerScare('scareEcho');}replayEcho();return;}echo.input.push(i);tone(180,.1,.06);updateEchoUI();if(echo.input.length===3){enterLock();say('echoNext',3);}}
+function drawEcho(){vctx.clearRect(0,0,W,H);ctx.fillStyle='#100d10';ctx.fillRect(0,0,W,H);const y=area.y+area.h*.08,h=area.h*.85;for(let i=0;i<3;i++){const x=W*(.06+i*.31),w=W*.26;const g=ctx.createLinearGradient(x,y,x+w,y+h);g.addColorStop(0,'#3d3335');g.addColorStop(1,'#08070a');ctx.fillStyle=g;ctx.fillRect(x,y,w,h);ctx.strokeStyle='#77655c';ctx.strokeRect(x+5,y+5,w-10,h-10);ctx.fillStyle='#c1a890';ctx.font='18px ui-monospace,monospace';ctx.textAlign='center';ctx.fillText('00'+(i+1),x+w/2,y+30);ctx.fillStyle='#986e57';ctx.fillRect(x+w*.83,y+h*.6,4,8);}}
+$('cameraOpen').onclick=openCamera;$('cameraSkip').onclick=virtualRoom;$('cameraExit').onclick=exitGame;
+$('cameraToggle').onclick=()=>{if(state.paused||state.scare)return;if(camera.active){stopCamera();updateUI();}else{$('cameraError').textContent='';$('cameraOpen').disabled=false;$('gameUI').inert=true;$('cameraChoice').hidden=false;$('cameraOpen').focus({preventScroll:true});}};
+document.querySelectorAll('[data-echo]').forEach(b=>b.onclick=()=>answerEcho(Number(b.dataset.echo)));
+
+/* ---- 第三關：destination-out 擦除；累積「真正移動」三秒，不用牆鐘計時 ---- */
+function enterWall(){stopCamera();$('cameraChoice').hidden=true;state.mode='wall';state.stageStart=state.clock;gesture=null;stopSensor();setSensorStatus('');buildBlood();updateUI();say('instruction2',3);$('stageAction').focus({preventScroll:true})}
 function paintStroke(segment){
  const c=maskCtx,p=pos(segment.x1,segment.y1),q=pos(segment.x2,segment.y2);c.save();c.globalCompositeOperation='destination-out';c.strokeStyle='rgba(0,0,0,1)';c.lineCap='round';c.lineJoin='round';c.lineWidth=segment.r*W*2;c.beginPath();c.moveTo(p.x,p.y);c.lineTo(q.x,q.y);c.stroke();c.beginPath();c.arc(q.x,q.y,segment.r*W,0,Math.PI*2);c.fillStyle='#000';c.fill();c.restore();
 }
@@ -600,8 +712,8 @@ function drawLock(){
 function addDigit(digit){if(state.mode!=='lock'||state.paused||state.scare||state.code.length>=4||!/^\d$/.test(digit))return;state.code+=digit;$('codeDisplay').textContent=state.code.padEnd(4,'—').split('').join(' ');tone(160+Number(digit)*25,.09,.05)}
 function checkDoor(){
  if(state.mode!=='lock'||state.paused||state.scare)return;if(state.code.length!==4){say('needCode',3);return}
- // 字串比較保留 0618 等前導零；固定備用碼可避免忘記月日而永遠卡關。
- if(state.code===readBirthday()||state.code==='0618'){state.victory=true;$('lockPanel').classList.add('fractured');triggerScare('scareFinal');return}
+ // 字串比較保留 0101 等前導零；固定備用碼可避免忘記月日而永遠卡關。
+ if(state.code===readBirthday()||state.code==='0101'){state.victory=true;$('lockPanel').classList.add('fractured');triggerScare('scareFinal');return}
  beginLockout();
 }
 
@@ -631,17 +743,73 @@ function buildGhost(){
  for(const side of [-1,1]){c.save();c.translate(side<0?45:515,680);c.scale(side,1);c.rotate(-.19);for(let i=0;i<5;i++){const x=-22+i*17,len=80+Math.sin(i*.8)*45;c.strokeStyle='#ada3a6';c.lineWidth=13-i*.7;c.lineCap='round';c.beginPath();c.moveTo(x,12);c.lineTo(x+8,-len*.48);c.lineTo(x-2,-len);c.stroke();c.strokeStyle='#35272c';c.lineWidth=2;c.beginPath();c.moveTo(x-5,-len*.48);c.lineTo(x+8,-len*.48);c.stroke();c.fillStyle='#160e12';c.fillRect(x-5,-len-7,6,10)}c.restore()}
 }
 buildGhost();
+
+/* ---- 假分頁增生：只畫 Canvas，不建立真正視窗，不變更網址或系統。 ---- */
+const stormTile=document.createElement('canvas');stormTile.width=400;stormTile.height=310;
+let stormTileFace=null,stormTileLang='';
+function faceInBox(c,source,x,y,w,h){
+ const iw=source.naturalWidth||source.width,ih=source.naturalHeight||source.height,k=Math.max(w/iw,h/ih);
+ c.save();c.beginPath();c.rect(x,y,w,h);c.clip();c.drawImage(source,x+(w-iw*k)/2,y+(h-ih*k)/2,iw*k,ih*k);c.restore();
+}
+function cachedWindow(source){
+ if(stormTileFace===source&&stormTileLang===lang)return stormTile;
+ stormTileFace=source;stormTileLang=lang;const c=stormTile.getContext('2d');
+ c.fillStyle='#cbd0d6';c.fillRect(0,0,400,310);c.fillStyle='#fafafa';c.fillRect(8,6,222,30);
+ c.fillStyle='#333';c.font='13px system-ui';c.textBaseline='middle';c.textAlign='left';c.fillText('◉  '+tr('stormTitle'),18,20);c.fillText('×',208,20);c.fillText('+',246,20);c.fillText('−  □  ×',338,18);
+ c.fillStyle='#f2f3f5';c.fillRect(1,36,398,48);c.fillStyle='#686b70';c.font='18px system-ui';c.fillText('‹  ›  ↻',12,55);
+ c.fillStyle='#e4e6e9';c.fillRect(83,42,282,25);c.fillStyle='#72757a';c.font='11px ui-monospace,monospace';c.fillText('help-me.invalid / help / help / help',94,55);
+ c.font='10px system-ui';c.fillText(('◉ '+tr('stormHelp')+'   ').repeat(4),10,76);
+ c.fillStyle='#690b1c';c.fillRect(1,84,398,216);faceInBox(c,source,72,84,258,216);
+ c.fillStyle='#af354c';c.fillRect(1,282,398,18);c.fillStyle='#090406';c.font='10px system-ui';c.fillText((tr('stormHelp')+' ').repeat(12),4,291);
+ c.fillStyle='#cbd0d6';c.fillRect(1,300,398,9);c.strokeStyle='#18191a';c.lineWidth=2;c.strokeRect(1,1,398,308);return stormTile;
+}
+function stormWindows(s=state.scare){
+ if(!s?.storm||!s.shown)return 0;return reducedMotion.matches?8:Math.min(8,1+Math.floor(Math.max(0,state.clock-s.start)/.31));
+}
+function scareQuiet(){
+ const s=state.scare;if(!s)return false;const t=state.clock-s.start;
+ return !s.shown||s.storm&&(t<.9||t>=2.05&&t<3.05);
+}
+function scarePulse(){
+ scream();if(state.consent.vibrate&&typeof navigator.vibrate==='function'){try{navigator.vibrate([500,200,500])}catch{}}
+}
+function tickStorm(){
+ const s=state.scare;if(!s?.storm||!s.shown)return;const t=state.clock-s.start;
+ // 只有遊戲時鐘推動事件，暫停／切背景會連同視窗、前奏、尖叫一起凍結。
+ if(t>=3.05&&!s.burst){s.burst=true;silenceEffects();gain(state.muted?0:1);scarePulse();return;}
+ if(t>=2.05&&t<3.05){if(!s.quiet){s.quiet=true;silenceEffects();gain(0)}return;}
+ if(t>=.9&&t<1.95){const index=Math.floor((t-.9)/.33);if(index!==s.pulse){s.pulse=index;gain(state.muted?0:1);tone(280+index*80,.075,.10,'square');tone(70,.09,.05,'triangle',.035)}}
+}
+function drawStorm(c,t,source){
+ const still=reducedMotion.matches,visualTime=still?3.3:t,tile=cachedWindow(source),n=stormWindows();
+ c.fillStyle='#070307';c.fillRect(0,0,W,H);c.font='11px ui-monospace,monospace';c.textAlign='left';c.fillStyle='#a08b90';c.fillText(tr('stormLost'),16,82);
+ // 一張快取的瀏覽器裝飾反覆縮放，最多八張；不增加 DOM、timer 或記憶體。
+ for(let i=0;i<n;i++){
+  const w=Math.min(W*.88,520)*(1-(i%3)*.06),h=w*310/400;
+  const x=W*(i%2?.18:-.035)+(i%3)*W*.012,y=H*.12+(i%5)*H*.12;
+  c.save();c.translate(x+(still?0:Math.sin(visualTime*5+i)*1.7),y);c.rotate(still?0:Math.sin(visualTime*2+i)*.012);
+  c.fillStyle='#000a';c.fillRect(5,7,w,h);c.drawImage(tile,0,0,w,h);c.restore();
+ }
+ const loom=clamp((visualTime-3.05)/.16,0,1);
+ if(loom>0){c.fillStyle='#000';c.globalAlpha=loom*.72;c.fillRect(0,0,W,H);c.globalAlpha=loom;
+  const growth=still?1:1+Math.min(.15,Math.max(0,t-3.05)*.08),w=W*1.10*growth,h=H*1.03*growth;
+  faceInBox(c,source,(W-w)/2+(still?0:Math.sin(t*19)*1.4),(H-h)/2,w,h);c.globalAlpha=1;
+ }
+ // 未選閃光只有移動及局部撕裂；減少動態時是固定八視窗＋鬼臉拼貼。
+ if(state.consent.flash&&!still&&t>=3.05&&t<3.15){c.fillStyle='#99132848';c.fillRect(0,0,W,H)}
+ tape(c);
+}
+
 function showScare(){
- if(!state.scare||state.scare.shown||state.paused)return;state.scare.shown=true;if(state.scare.key==='scareFinal')clearVictoryStorage();else rememberScare();$('scare').hidden=false;$('scareCaption').textContent=tr(state.scare.key);$('scareContinue').focus({preventScroll:true});gain(state.muted?0:1);scream();
+ if(!state.scare||state.scare.shown||state.paused)return;state.scare.shown=true;state.scare.face=materials.face||ghost;$('scare').classList.toggle('storm',state.scare.storm);if(state.scare.key==='scareFinal')clearVictoryStorage();else rememberScare();$('scare').hidden=false;$('scareCaption').textContent=tr(state.scare.key);$('scareContinue').focus({preventScroll:true});gain(state.muted||scareQuiet()?0:1);if(!state.scare.storm)scarePulse();
  $('gameUI').inert=true;$('lockPanel').inert=true;
- if(state.consent.vibrate&&typeof navigator.vibrate==='function'){try{navigator.vibrate([500,200,500])}catch{}}
  if(ASSETS.enabled&&!$('scareImage').src){const img=$('scareImage');img.onload=()=>{if(state.scare?.shown)img.hidden=false};img.onerror=()=>{img.hidden=true};img.src=ASSETS.ghost}
 }
 function triggerScare(key,instant=false){
  if(state.scare||state.paused||isEntry()||state.mode==='ending')return;
- const start=state.clock+(instant?0:.85);state.scare={key,start,end:start+1.85,shown:false};gesture=null;silenceEffects();gain(0);if(instant)showScare();
+ loadFace();const storm=key==='scareTrap'||key==='scareFinal',start=state.clock+(instant?0:.85);state.scare={key,start,end:start+(storm?5:1.85),shown:false,storm,burst:false,quiet:false,pulse:-1,face:null};gesture=null;silenceEffects();gain(0);if(instant)showScare();
 }
-function dismissScare(){if(!state.scare)return;const final=state.scare.key==='scareFinal';state.scare=null;$('scare').hidden=true;$('scareImage').hidden=true;$('gameUI').inert=false;$('lockPanel').inert=false;silenceEffects();if(typeof navigator.vibrate==='function')navigator.vibrate(0);gain(state.muted?0:1);updateUI();if(final){finishGame();return}$('hint').focus({preventScroll:true})}
+function dismissScare(){if(!state.scare)return;const final=state.scare.key==='scareFinal';state.scare=null;$('scare').hidden=true;$('scare').classList.remove('storm');$('scareImage').hidden=true;$('gameUI').inert=false;$('lockPanel').inert=false;silenceEffects();if(typeof navigator.vibrate==='function')navigator.vibrate(0);gain(state.muted?0:1);updateUI();if(final){finishGame();return}if(state.mode==='echo')replayEcho();$('hint').focus({preventScroll:true})}
 // 固定掃描線；局部撕裂用遊戲時間，所以暫停完全凍結。減少動態只留靜態線。
 function tape(c){
  c.fillStyle='#0004';for(let y=0;y<H;y+=4)c.fillRect(0,y,W,1);
@@ -649,16 +817,19 @@ function tape(c){
  if(t%3.7<.22){const y=H*(.23+(Math.floor(t/3.7)%3)*.2),h=12+H*.02;c.drawImage(c.canvas,0,y*DPR,W*DPR,h*DPR,11,y,W,h);c.fillStyle='#91213a24';c.fillRect(0,y,W,h)}
 }
 function drawScare(){
- const c=$('scareCanvas').getContext('2d'),t=Math.max(0,state.clock-state.scare.start),still=reducedMotion.matches;
- c.fillStyle='#040305';c.fillRect(0,0,W,H);const scale=Math.max(W/560,H/780)*(1+(still?0:Math.min(.16,t*.08))),w=560*scale,h=780*scale,x=(W-w)/2+(still?0:Math.sin(t*31)*2),y=(H-h)/2+(still?0:Math.cos(t*27)*2);
- c.save();if(state.scare.key==='scareFinal'){c.translate(W,H);c.rotate(Math.PI)}c.drawImage(ghost,x,y,w,h);c.restore();
- // 同意閃光才有慢紅色脈衝；無閃光版本仍以靜態笑臉及局部錯位營造不安。
+ const c=$('scareCanvas').getContext('2d'),s=state.scare,t=Math.max(0,state.clock-s.start),still=reducedMotion.matches;
+ // 減少動態時鎖住首次選用的影像，晚到的素材也不讓靜態畫面突然改變。
+ const source=still?s.face:(materials.face||ghost),caption=s.storm?(still||t>=3.05?'stormSeen':t>=.65?'stormHelp':'stormLost'):s.key;
+ if($('scareCaption').textContent!==tr(caption))$('scareCaption').textContent=tr(caption);
+ if(s.storm){drawStorm(c,t,source);return;}
+ c.fillStyle='#040305';c.fillRect(0,0,W,H);const grow=still?1:1+Math.min(.16,t*.08),w=W*grow,h=H*grow;
+ faceInBox(c,source,(W-w)/2+(still?0:Math.sin(t*31)*2),(H-h)/2+(still?0:Math.cos(t*27)*2),w,h);
  if(state.consent.flash&&!still&&t%1<.12){c.fillStyle='#aa163a35';c.fillRect(0,0,W,H)}tape(c);
 }
 let lastBeat=0,lastKnock=0;
 function tickGame(){
- if(state.scare){if(!state.scare.shown&&state.clock>=state.scare.start)showScare();if(state.scare&&state.clock>=state.scare.end)dismissScare();return}
- const t=state.clock-state.stageStart;
+ if(state.scare){if(!state.scare.shown&&state.clock>=state.scare.start)showScare();if(state.scare&&state.clock>=state.scare.end)dismissScare();else tickStorm();return}
+ const t=state.clock-state.stageStart;if(state.mode==='echo')tickEcho();
  // 正常十秒、四次以上三秒；最後 0.85 秒全靜音，滿秒才顯示並記錄驚嚇。
  if(state.mode==='corridor'&&!state.countdownScared&&t>=countdownSeconds()-.85){state.countdownScared=true;triggerScare('scareCountdown');return}
  if(state.mode==='corridor'&&t>9&&state.clock-lastKnock>8){lastKnock=state.clock;tone(170,.06,.15,'triangle');tone(145,.05,.10,'triangle',.22)}
@@ -666,7 +837,7 @@ function tickGame(){
 }
 function finishGame(){
  state.session++;
- state.mode='ending';state.scare=null;stopSensor();stopAudio();if(typeof navigator.vibrate==='function')navigator.vibrate(0);$('gameUI').hidden=true;$('lockPanel').hidden=true;$('scare').hidden=true;$('ending').hidden=false;$('shareStatus').textContent='';
+ state.mode='ending';state.scare=null;stopCamera();stopSensor();stopAudio();if(typeof navigator.vibrate==='function')navigator.vibrate(0);$('gameUI').hidden=true;$('lockPanel').hidden=true;$('scare').hidden=true;$('ending').hidden=false;$('shareStatus').textContent='';
  // 破關已 clear()；此處只顯示結局，不再寫回已清除的紀錄。
  renderEnding();$('replay').focus({preventScroll:true});
 }
@@ -683,21 +854,21 @@ document.querySelectorAll('.minor').forEach(b=>b.onclick=()=>location.assign('ht
 $('acknowledge').addEventListener('change',entryGate);$('start').addEventListener('click',startGame);
 $('curseAcknowledge').addEventListener('change',entryGate);$('curseContinue').addEventListener('click',startGame);
 document.querySelectorAll('[data-lang]').forEach(el=>el.addEventListener('click',()=>setLanguage(el.dataset.lang)));
-$('language').addEventListener('click',()=>setLanguage({zh:'en',en:'ja',ja:'zh'}[lang]));$('hint').addEventListener('click',()=>say('hint'+({corridor:1,wall:2,lock:3}[state.mode]||1),6));
+$('language').addEventListener('click',()=>setLanguage({zh:'en',en:'ja',ja:'zh'}[lang]));$('hint').addEventListener('click',()=>say('hint'+({corridor:1,wall:2,lock:3,scan:4,echo:5}[state.mode]||1),6));
 for(const id of ['mute','scareMute'])$(id).addEventListener('click',toggleMute);
 for(const id of ['exit','scareExit','pauseExit','replay'])$(id).addEventListener('click',exitGame);
-$('pause').addEventListener('click',pauseGame);$('resume').addEventListener('click',resumeGame);
+for(const id of ['pause','scarePause'])$(id).addEventListener('click',pauseGame);$('resume').addEventListener('click',resumeGame);
 $('recenter').addEventListener('click',()=>{sensor.base=null;targetLight={x:W/2,y:area.y+area.h/2};light={...targetLight};say('motionReset',2)});
-$('stageAction').addEventListener('click',()=>{if(state.paused||state.scare)return;if(state.mode==='corridor')hitTest(light.x,light.y);else if(state.mode==='wall'){if(state.wallScared&&state.coverage>=.42)enterLock();else assistWipe()}});
+$('stageAction').addEventListener('click',()=>{if(state.paused||state.scare)return;if(state.mode==='corridor')hitTest(light.x,light.y);else if(state.mode==='wall'){if(state.wallScared&&state.coverage>=.42)enterEcho();else assistWipe()}else if(state.mode==='scan')captureAnomaly();else if(state.mode==='echo')replayEcho()});
 $('scareContinue').addEventListener('click',dismissScare);document.querySelectorAll('[data-digit]').forEach(el=>el.addEventListener('click',()=>addDigit(el.dataset.digit)));
 $('clearCode').addEventListener('click',()=>{state.code='';$('codeDisplay').textContent='— — —'});$('openDoor').addEventListener('click',checkDoor);$('share').addEventListener('click',shareEntrance);
 window.addEventListener('resize',resize);window.visualViewport?.addEventListener('resize',resize);
-document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelPurification();pauseGame()}else if(state.mode==='locked')lockTick()});window.addEventListener('pagehide',()=>{cancelPurification();stopSensor();stopAudio();if(typeof navigator.vibrate==='function')navigator.vibrate(0)});
+document.addEventListener('visibilitychange',()=>{if(document.hidden){cancelPurification();pauseGame()}else if(state.mode==='locked')lockTick()});window.addEventListener('pagehide',()=>{stopCamera();cancelPurification();stopSensor();stopAudio();if(typeof navigator.vibrate==='function')navigator.vibrate(0)});
 window.addEventListener('pageshow',e=>{if(e.persisted){if(loadLockout()){if(lockout.until>Date.now())showLocked();else restoreLock()}else exitGame()}});
-window.addEventListener('keydown',e=>{if(e.key==='Escape'){if(state.mode==='locked')leaveLockout();else pauseGame();return}if(e.target instanceof HTMLInputElement||state.paused||state.scare)return;if(state.mode==='corridor'&&['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();sensor.touchUntil=performance.now()+1000;targetLight.x=clamp(targetLight.x+({ArrowLeft:-24,ArrowRight:24}[e.key]||0),0,W);targetLight.y=clamp(targetLight.y+({ArrowUp:-24,ArrowDown:24}[e.key]||0),area.y,area.y+area.h)}if(state.mode==='lock'&&/^[0-9]$/.test(e.key))addDigit(e.key)});
-document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const active=['pauseScreen','lockout','scare','intro','curseIntro','restScreen','ending'].map($).find(el=>!el.hidden);if(!active)return;const controls=[...active.querySelectorAll('button:not(:disabled),input')].filter(el=>!el.hidden),first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}});
+window.addEventListener('keydown',e=>{if(e.key==='Escape'){if(state.mode==='locked')leaveLockout();else pauseGame();return}if(e.target instanceof HTMLInputElement||state.paused||state.scare)return;if(['corridor','scan'].includes(state.mode)&&['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();sensor.touchUntil=performance.now()+1000;targetLight.x=clamp(targetLight.x+({ArrowLeft:-24,ArrowRight:24}[e.key]||0),0,W);targetLight.y=clamp(targetLight.y+({ArrowUp:-24,ArrowDown:24}[e.key]||0),area.y,area.y+area.h)}if(state.mode==='lock'&&/^[0-9]$/.test(e.key))addDigit(e.key)});
+document.addEventListener('keydown',e=>{if(e.key!=='Tab')return;const active=['pauseScreen','lockout','scare','cameraChoice','intro','curseIntro','restScreen','ending'].map($).find(el=>!el.hidden);if(!active)return;const controls=[...active.querySelectorAll('button:not(:disabled),input')].filter(el=>!el.hidden),first=controls[0],last=controls.at(-1);if(e.shiftKey&&document.activeElement===first){e.preventDefault();last?.focus()}else if(!e.shiftKey&&document.activeElement===last){e.preventDefault();first?.focus()}});
 // 使用自有、非敏感狀態供本機 QA 讀取；正式頁不暴露強制跳關操作。
-Object.defineProperty(window,'gameDiagnostics',{get:()=>({mode:state.mode,paused:state.paused,lang,sensor:sensor.status,sensorListening:sensor.listening,audioState:sound.ctx?.state||'none',audioGain:sound.master?.gain.value||0,mediaPaused:sound.media?.paused??true,muted:state.muted,consent:{...state.consent},curseStatus:curse.status,deathCount:curse.deathCount,firstVisit:curse.firstVisit,storageAvailable:curse.available,heavyCurse:state.heavyCurse,beamRadius:beamRadius(),countdownSeconds:countdownSeconds(),ambientRate:sound.ambient?.source.playbackRate.value??null,mediaRate:sound.media?.playbackRate??null,lockUntil:lockout.until,lockRemaining:lockout.remaining,victory:state.victory,clock:state.clock,wipeTime:state.wipeTime,wallScared:state.wallScared,coverage:state.coverage,seal:state.seal,scare:state.scare?.shown||false,scarePending:!!state.scare&&!state.scare.shown,area:{...area},light:{...light},frameP95:frameCosts.length?[...frameCosts].sort((a,b)=>a-b)[Math.floor(frameCosts.length*.95)]:0,frameMax:frameCosts.length?Math.max(...frameCosts):0})});
+Object.defineProperty(window,'gameDiagnostics',{get:()=>({mode:state.mode,paused:state.paused,lang,sensor:sensor.status,sensorListening:sensor.listening,audioState:sound.ctx?.state||'none',roomAsset:materials.roomStatus,faceAsset:materials.faceStatus,stormWindows:stormWindows(),stormBurst:!!state.scare?.burst,knockAsset:materials.knockStatus,knockPlays:materials.knockPlays,audioGain:sound.master?.gain.value||0,mediaPaused:sound.media?.paused??true,cameraActive:camera.active,cameraPending:camera.pending,cameraTracks:camera.stream?.getTracks().filter(t=>t.readyState==='live').length||0,anomalies:scan.found.size,echoReady:echo.ready,echoInput:echo.input.length,muted:state.muted,consent:{...state.consent},curseStatus:curse.status,deathCount:curse.deathCount,firstVisit:curse.firstVisit,storageAvailable:curse.available,heavyCurse:state.heavyCurse,beamRadius:beamRadius(),countdownSeconds:countdownSeconds(),ambientRate:sound.ambient?.source.playbackRate.value??null,mediaRate:sound.media?.playbackRate??null,lockUntil:lockout.until,lockRemaining:lockout.remaining,victory:state.victory,clock:state.clock,wipeTime:state.wipeTime,wallScared:state.wallScared,coverage:state.coverage,seal:state.seal,scare:state.scare?.shown||false,scarePending:!!state.scare&&!state.scare.shown,area:{...area},light:{...light},frameP95:frameCosts.length?[...frameCosts].sort((a,b)=>a-b)[Math.floor(frameCosts.length*.95)]:0,frameMax:frameCosts.length?Math.max(...frameCosts):0})});
 // DOMContentLoaded 第一時間讀持久化狀態，正常歡迎與開始按鈕不會先閃出來。
 function boot(){readCurse();saveCurse();readBirthday();renderEntry();setLanguage(lang,false);resize();updateGrain();if(loadLockout()){if(lockout.until>Date.now())showLocked();else restoreLock()}raf=requestAnimationFrame(loop)}
 if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',boot,{once:true});else boot();
