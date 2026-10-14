@@ -1,8 +1,8 @@
 # 素材來源與選用方式
 
-更新：2026-10-13
+更新：2026-10-14
 
-這些素材隨作品放在同來源 assets/，遊玩時不連生成服務或素材來源網站。三檔缺漏時，內建 Canvas / Web Audio 仍能完整通關。
+這些素材隨作品放在同來源 assets/，遊玩時不連生成服務或素材來源網站。七檔缺漏時，內建 Canvas / Web Audio 仍能完整通關。
 
 ## assets/curtain-room.webp
 
@@ -45,6 +45,29 @@ Composition: portrait 4:5 cutout, entire face, fingers and shoulders remain insi
 
 ```
 
+## assets/tv-static.webp
+
+使用者於2026-10-14提供的電視雪花PNG（1917×887，2216604 bytes）。本次僅等比例縮為960×444 WebP（quality55、method6），30922 bytes，保留完整構圖及右下標記。原檔保存於本機備份，不隨公開包提供。原始作者與授權尚未由附件提供，**不標示為CC0、公有領域或原創生成**；此來源狀態與敲門聲的CC0授權不同。
+
+SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
+
+用途：進入底片／文件及文件歸零短暫過場，首次過場才請求。雜訊聲是Web Audio合成，沒有新增音訊資產；缺圖回退內建grain。首頁不顯示或預載，真正控制列不覆蓋。
+
 ## 上傳
 
-把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下三個素材一起上傳。共八個檔案；不需要 work/、qa/、API 金鑰或 node_modules。只上傳 HTML 仍可玩，使用內建場景和合成敲聲。
+把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下七個素材一起上傳。共十二個檔案；不需要 work/、qa/、API 金鑰或 node_modules。只上傳 HTML 仍可玩，使用內建場景和合成敲聲。
+
+
+## 底片支線（沒有新增資產）
+
+機械眼壁、三／四眼、瞳孔與四位月日均由內聯 Canvas 程序原創繪製，不使用網路圖片、玩家鏡頭畫面或素材佔位圖。眼壁本身沒有額外資產；進入支線的短暫雪花過場會按需載入上述tv-static.webp，公開共七素材、十二檔。
+
+## 原創鬼群（2026-10-14）
+
+內建 imagegen 分別生成。使用者的三張附圖只作為長髮、回頭及暗眼的氛圍參考；公開包沒有附圖原檔、商標或水印。沒有使用 Gemini / Grok / 其他外部服務生成這批素材。所有原始PNG與精確提示詞保存在本機work/，公開只放WebP。
+
+- assets/ghost-listener.webp：46922 bytes，512×768 RGBA，SHA256 9170845d86ba4d7db6e9174dfdb7bb71f2d8e11b7aa810f12ab9e0cb3c4de51b。提示詞：work/ghost-listener-prompt.txt；原圖：work/ghost-listener-original.png。
+- assets/ghost-returner.webp：35692 bytes，512×768 RGBA，SHA256 f8d41b22526334557671ef5ce2b7cfb3eb908a4cbff031b5637ed2e7f56460ac。提示詞：work/ghost-returner-prompt.txt；原圖：work/ghost-returner-original.png。
+- assets/ghost-mask.webp：45338 bytes，512×768 RGBA，SHA256 eba6a8fa0e2791bbae21a90d1b056a121e3d05a74a4fa28717397527d7d647b5。提示詞：work/ghost-mask-prompt.txt；原圖：work/ghost-mask-original.png。
+
+僅執行等比例縮小與WebP格式轉換，保留真實alpha；沒有由程式去背或創作重畫。角色各自按關卡載入，失敗使用一次快取的程序輪廓。提示詞可供後續替換同身份。
