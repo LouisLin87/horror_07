@@ -1,8 +1,8 @@
 # 素材來源與選用方式
 
-更新：2026-10-14
+更新：2026-10-15
 
-這些素材隨作品放在同來源 assets/，遊玩時不連生成服務或素材來源網站。七檔缺漏時，內建 Canvas / Web Audio 仍能完整通關。
+這些素材隨作品放在同來源 assets/，遊玩時不連生成服務或素材來源網站。八檔缺漏時，內建 Canvas / Web Audio 仍能完整通關。
 
 ## assets/curtain-room.webp
 
@@ -55,12 +55,12 @@ SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
 
 ## 上傳
 
-把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下七個素材一起上傳。共十二個檔案；不需要 work/、qa/、API 金鑰或 node_modules。只上傳 HTML 仍可玩，使用內建場景和合成敲聲。
+把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下八個素材一起上傳。共十三個檔案；不需要 work/、qa/、API 金鑰或 node_modules。只上傳 HTML 仍可玩，使用內建場景和合成敲聲。
 
 
 ## 底片支線（沒有新增資產）
 
-機械眼壁、三／四眼、瞳孔與四位月日均由內聯 Canvas 程序原創繪製，不使用網路圖片、玩家鏡頭畫面或素材佔位圖。眼壁本身沒有額外資產；進入支線的短暫雪花過場會按需載入上述tv-static.webp，公開共七素材、十二檔。
+機械眼壁、三／四眼、瞳孔與四位月日均由內聯 Canvas 程序原創繪製，不使用網路圖片、玩家鏡頭畫面或素材佔位圖。眼壁本身沒有額外資產；進入支線的短暫雪花過場會按需載入上述tv-static.webp，公開共八素材、十三檔。
 
 ## 原創鬼群（2026-10-14）
 
@@ -71,3 +71,15 @@ SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
 - assets/ghost-mask.webp：45338 bytes，512×768 RGBA，SHA256 eba6a8fa0e2791bbae21a90d1b056a121e3d05a74a4fa28717397527d7d647b5。提示詞：work/ghost-mask-prompt.txt；原圖：work/ghost-mask-original.png。
 
 僅執行等比例縮小與WebP格式轉換，保留真實alpha；沒有由程式去背或創作重畫。角色各自按關卡載入，失敗使用一次快取的程序輪廓。提示詞可供後續替換同身份。
+
+## assets/scan-foley.wav（2026-10-15）
+
+- 作者：小森平 / Taira Komori。
+- 原素材頁：[人聲／腳步](https://taira-komori.net/human01tw.html)，使用walking_in_a_house1（木地板赤腳）；[開關聲](https://taira-komori.net/openclose01tw.html)，使用iron_door1_O（慢開鐵門）。
+- 條款：[小森平免費音效使用說明](https://taira-komori.net/freesoundtw.html)，2026-10-15查核。允許作品中的遊戲使用及加工；不以獨立音效素材集再配布或販售，不熱連來源音檔，不標示為CC0或自己錄製。此檔僅作為本遊戲場景中的音效；要抽出再配布，須重新依作者條款確認。
+- 修改：原生AudioContext解碼、OfflineAudioContext重採樣為16000Hz單聲道。腳步取原檔0.094875起0.35秒，慢開門取0.1361875起1.05秒；兩段間留0.06秒。各段峰值正規化0.65、12ms淡入／24ms淡出，合併PCM16 WAV。總1.46秒、46764 bytes。
+- SHA256：7aacc18226ababf04764412d7bc3216e62f49d43a3abcc4160cf10a3481923f0。
+- 用途：第二關已選音效並進入探索後才下載。腳步／門軸另外加低通／帶通及左右定位；缺漏用合成替代。心跳與鬼影出現的故障聲皆為程式合成，沒有外部聲檔。
+- 鳴謝：Sound effects by Taira Komori / 小森平。原始下載與加工記錄保存在本機work/scan-audio-originals及work/scan-foley-manifest.json，公開包不提供原MP3，也不連來源站播放。
+
+本輪只採小森平兩個切片；Pixabay、Mixkit、Zapsplat及Fesliyan僅作參考，沒有使用其素材或聲稱其全部素材為CC0。
