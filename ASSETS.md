@@ -83,3 +83,5 @@ SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
 - 鳴謝：Sound effects by Taira Komori / 小森平。原始下載與加工記錄保存在本機work/scan-audio-originals及work/scan-foley-manifest.json，公開包不提供原MP3，也不連來源站播放。
 
 本輪只採小森平兩個切片；Pixabay、Mixkit、Zapsplat及Fesliyan僅作參考，沒有使用其素材或聲稱其全部素材為CC0。
+
+第二關的60秒鬼影在Canvas暫存原創鬼像並九次偏移平均產生柔焦，沒有覆寫原WebP。快取只含原創鬼像，不存相機像素，沒有新增公開素材。

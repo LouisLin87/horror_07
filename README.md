@@ -1,5 +1,13 @@
 # 勿入 · DO NOT ENTER · 立入禁止
 
+## 2026-10-18 工作版
+
+六段改善：底部主要操作與音量浮層、觀察後啟動的驚嚇窗口、14px入口說明與內部捲動、停止首頁／結局背景重繪、四種鬼的行為規則，以及「留燈→003→影像校正→庇護條款→結局」三語線索。
+
+第一關需實際移動光圈並讀清一片，才啟動正常10秒／重度3秒的壓力窗口；不是進場即倒數。音量在底部「音量」開啟，可關閉、外點或按Escape。小手機的入口可上下滑動，日期與成年確認未完成時，開始按鈕上方會說明原因。相機仍是第二關另行選擇。
+
+本輪 Windows 應用程式控制阻擋 WebKit 測試程序，空白頁也無法開啟；未修改系統政策。六段工作版的檢查結果見本機 `qa/verification.md`；標記「Cozy預覽」的包是候選版本，正式封版仍須補齊 WebKit／實機驗證。既有正式 GitHub 上傳包在門檻通過前保留上一版。
+
 原創手機恐怖解謎，參考 Lomando 的探索與突發反差。繁體中文、英文、日文；五個主關卡、底片與 A_01_E 文件支線、Cozy Corner 庇護監控、可選陷阱、隱藏印記及兩種結局。程式、介面與替代視聽效果在 `index.html`，選用暗房、鬼臉、電視雪花圖片及實錄敲門、腳步與推門聲放在 `assets/`。不需要框架、API 金鑰或影片。素材缺漏時仍能用內建版本通關。
 
 英文與日文採自然口語：英文多用短句與縮寫，日文提示用日常說法；成年確認、相機及權限資訊仍明確。繁體中文保持原文。
@@ -10,7 +18,7 @@
 
 1990 年代低解析類比恐怖：空曠走廊重複同一房號，深處只有紅色門縫；鬼臉可選用原創寫實 WebP 素材，深陷眼窩、異常齒列與骨節手指營造不自然感；缺檔時使用黑白交叉排線的 Canvas 替代。牆面、衣物、長髮與骨節手指均由 Canvas 繪製並快取，不熱連外站圖片；第二關可使用隨作品附帶的原創 WebP 暗房。
 
-畫布有 VHS 掃描線、雜訊與局部水平錯位，操作文字及按鈕保持穩定；底片的敘事註記可短暫污染。局部錯位使用遊戲時間，暫停會凍結；系統「減少動態效果」停用撕裂、抖動與縮放，保留靜態畫面及解謎資訊。全畫面紅色脈衝仍需玩家選擇閃光。整合版 HTML 上限為 246000 bytes，公開包維持低於900000 bytes、十三檔及八項選用素材，首次入口不載入它們。
+畫布有 VHS 掃描線、雜訊與局部水平錯位，操作文字及按鈕保持穩定；底片的敘事註記可短暫污染。局部錯位使用遊戲時間，暫停會凍結；系統「減少動態效果」停用撕裂、抖動與縮放，保留靜態畫面及解謎資訊。全畫面紅色脈衝仍需玩家選擇閃光。整合版 HTML 上限為 280000 bytes，公開包維持低於930000 bytes、十三檔及八項選用素材，首次入口不載入它們。
 
 ## 同頁庇護監控與文件支線
 
@@ -30,7 +38,7 @@ Android Chrome 與 iOS Safari 的基礎遊玩都以觸控為主。相機與動�
 
 走廊眼睛陷阱及最後開門會觸發約五秒的演出：復古假視窗逐張堆疊，求救文字重複；短干擾聲之後約一秒完全安靜，再讓原創鬼臉貼近並尖叫。視窗裝飾全部畫在頁內 Canvas，最多八張；網址不改，不開新分頁、不下載程式。真正的暫停、靜音、退出、繼續按鈕一直可用。
 
-切換背景會暫停；返回後要自行繼續。減少動態時呈現固定拼貼，不增生、縮放或撕裂；閃光及震動仍按玩家選擇。鬼臉在第一次驚嚇前才載入，404、離線或毀損可用原程序鬼臉完成事件。每事件只累加一次詛咒，通關仍清空儲存。
+切換背景會暫停；返回後要自行繼續。減少動態時呈現固定拼貼，不增生、縮放或撕裂；閃光及震動仍按玩家選擇。鬼臉在第一次驚嚇前才載入，404、離線或毀損可用原程序鬼臉完成事件。每事件只累加一次詛咒，通關清空遊戲儲存，只保留本機理智排行榜。
 
 ## 取景器底片支線
 
@@ -64,7 +72,7 @@ Android Chrome 與 iOS Safari 的基礎遊玩都以觸控為主。相機與動�
 
 回聲房加入 Joseph SARDIN / BigSoundBank 的 [Door Knock #95](https://bigsoundbank.com/door-knock-s0095.html) 實錄聲音，來源明示 CC0；裁成 0.55 秒、約 35 KB 的 WAV，加入淡入淡出，遊戲再以低通及左右聲道處理。只有玩家同意音效、按開始且可用 Web Audio 時才下載；不延後音訊解鎖。靜音、暫停、退出與驚嚇前靜默仍有效。[授權與處理記錄](ASSETS.md)。
 
-素材放作品自己的 `assets/`，遊玩時不連來源站。下載慢、404、解碼失敗或離線都使用原來的 Canvas 房間／合成敲門聲，所有關卡有效。全部公開檔案未壓縮低於 900000 bytes；HTML 低於 246000 bytes，文件支線沒有額外下載資產。
+素材放作品自己的 `assets/`，遊玩時不連來源站。下載慢、404、解碼失敗或離線都使用原來的 Canvas 房間／合成敲門聲，所有關卡有效。全部公開檔案未壓縮低於 930000 bytes；HTML 低於 280000 bytes，文件支線沒有額外下載資產。
 
 ## 開始
 
@@ -74,7 +82,7 @@ Android Chrome 與 iOS Safari 的基礎遊玩都以觸控為主。相機與動�
 
 可選音效、動作感應、震動及短暫閃光。動作感應預設不勾選；拒絕或無法使用時，滑動光圈仍可完成所有關卡。音效勾選時，開始按鈕立即解鎖音訊。
 
-1. **沒有人的走廊**：滑動或傾斜光圈、找小骷髏；可選印記改變結局。
+1. **沒有人的走廊**：隨機三片門牌，照住1.2秒後按 I→II→III 收齊，再尋找／確認完整003門牌；可選印記改變結局。
 2. **窗簾後的取景器**：選擇後鏡頭或虛構暗房。滑動光圈／傾斜對準左上、右上、中下的三個虛構異狀，再按「捕捉異狀」。捕捉只是遊戲收集，不拍照、不保存影像。
 3. **牆後的名字**：來回擦血牆，約三秒有效移動後出現驚嚇；繼續擦出進門時的月日。
 4. **不要回第四聲**：三扇門依序敲響，以同一順序點門牌。靜音時看亮起的門牌及字幕，同樣可解。可重播、可提示；第一次答錯出現驚嚇。
@@ -112,11 +120,11 @@ Android Chrome 與 iOS Safari 的基礎遊玩都以觸控為主。相機與動�
 重整或重新開啟相同來源的網址，門後遭遇中的玩家優先恢復靜音暫停畫面。沒有遭遇時，若被詛咒則顯示暗紅入口與累計次數，跳過原本歡迎詞及「開始遊戲」。在新入口確認並按「面對它留下的記憶」才進入關卡；音訊和感應器依然需要使用者操作，不因詛咒而自動播放或要求權限。
 
 - 詛咒重返的背景音採 `playbackRate = 0.5`；HTMLAudio 備用音效也使用半速並關閉保留音高。[HTMLMediaElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/playbackRate)、[Web Audio](https://developer.mozilla.org/en-US/docs/Web/API/AudioBufferSourceNode/playbackRate)。
-- 一般走廊停留滿 10 秒觸發一次驚嚇，包含最後約 0.85 秒靜音。死亡 **4 次以上**的下一輪光圈半徑縮為一半，驚嚇提前至第 3 秒。暫停、背景和入口等待都不增加遊戲時間。
+- 一般走廊在第一次實際讀清門牌後，啟動 10 遊戲秒的驚嚇窗口，包含最後約 0.85 秒靜音。死亡 **4 次以上**的下一輪光圈半徑縮為一半，讀清後窗口縮為 3 秒。暫停、背景、入口等待與尚未操作時都不啟動窗口。
 - 淨化彩蛋：在詛咒入口的空白處連續快速點 7 次（每次間隔不超過 450 ms，整段在 2.5 秒內），或按住紅色詛咒文字 5 秒。移動超過 12 px、多指、取消觸控、離開入口或切背景會取消長按。鍵盤可聚焦文字後按住空白鍵或 Enter 5 秒。
 - 淨化顯示短暫白色覆層、清除紀錄並恢復首次入口；未選閃光或使用「減少動態」時改為低亮度白色覆層。正常退出、重玩及刷新不會解除詛咒。
 
-**清除範圍：**淨化與通關依本版需求使用 `localStorage.clear()`，會清掉同一來源下**所有** localStorage key，包含其他遊戲的紀錄。例如 `帳號.github.io/遊戲A/` 和 `/遊戲B/` 通常共用來源；需要隔離時部署到不同來源。淨化立即重新建立正常狀態；通關結局保持清空，待下一次進入才初始化。[MDN clear()](https://developer.mozilla.org/en-US/docs/Web/API/Storage/clear)。
+**清除範圍：**淨化與通關使用 `localStorage.clear()`，會清掉同一來源下的 key，包含其他遊戲的紀錄；新增理智排行榜後，通關**只豁免 `horror_sanity_board`**，淨化則連排行榜一起刪除。例如 `帳號.github.io/遊戲A/` 和 `/遊戲B/` 通常共用來源；需要隔離時部署到不同來源。淨化立即重新建立正常狀態；通關結局不再寫回遊戲狀態，待下一次進入才初始化。[MDN clear()](https://developer.mozilla.org/en-US/docs/Web/API/Storage/clear)。
 
 紀錄僅對同一瀏覽器與來源有效；HTTPS、HTTP、不同主機或連接埠不共用。無痕關閉、清除網站資料或瀏覽器封鎖儲存可能讓紀錄消失；儲存被拒絕時會顯示提示，退回目前頁面的記憶體狀態。請以 HTTP/HTTPS 測持久化，`file://` 的儲存行為不保證一致。[MDN localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)。
 
@@ -140,35 +148,35 @@ Android Chrome 與 iOS Safari 的基礎遊玩都以觸控為主。相機與動�
 
 只有玩家選擇震動才呼叫 `[500, 200, 500]`；不支援時保留畫面與聲音。震動 API 在部分瀏覽器不可用，系統靜音與勿擾模式亦會影響效果，不能承諾每台手機振動。[MDN 震動說明](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/vibrate)。
 
-尖叫音效使用 1.0 網頁音量；網頁不能修改裝置的實體音量。預設不閃光；「減少動態效果」會關閉閃光及畫面抖動。Canvas、CSS 手勢與 viewport 依手機滿版遊戲需求限制頁面捲動及縮放，系統或瀏覽器的輔助縮放仍由使用者控制。
+尖叫經過玩家設定的遊戲音量；網頁不能修改裝置的實體音量。入口效果預勾且可取消；「減少動態效果」會關閉閃光及畫面抖動。Canvas、CSS 手勢與 viewport 依手機滿版遊戲需求限制頁面捲動及縮放，系統或瀏覽器的輔助縮放仍由使用者控制。
 
 HTML 內的 `ASSETS` 預留 `scream.mp3` 與 `ghost.gif`。目前 `enabled: false`，由內建 Web Audio／HTMLAudio 備用尖叫及程序鬼臉提供效果，因此十三檔案包可獨立遊玩。只有自行提供外部素材並設成 `true` 時，才需要一併上傳這兩檔。
 
 ## 隱私與驗證
 
-第二關的相機由玩家主動選擇，只使用 video，不請求麥克風或定位；相機和感應器資料不離開本頁。localStorage 保存玩家主動填寫的四位月日代碼、詛咒狀態、死亡事件次數、首次時間、四次遊戲按鍵與間隔、門後進度及恢復關卡的印記，不保存姓名、生日年份、感應器數值或權限偏好，也不傳送紀錄。所有故事、角色和情節均為虛構，沒有真實追蹤或入侵。
+第二關的相機由玩家主動選擇，只使用 video，不請求麥克風或定位；相機和感應器資料不離開本頁。localStorage 保存玩家主動填寫的四位月日代碼、詛咒狀態、死亡事件次數、首次時間、四次遊戲按鍵與間隔、門後進度及恢復關卡的印記，另存玩家自行填寫的暱稱、本輪理智事件和已通關排名；不要求真實姓名、生日年份，不保存感應器數值或權限偏好，也不傳送紀錄。所有故事、角色和情節均為虛構，沒有真實追蹤或入侵。
 
 瀏覽器檢查與實體手機分開記錄；檢查範圍和操作步驟見 [手機測試](手機測試.md)。手機感應、實際震動、耳機音量及 Threads 內建瀏覽器仍需實機操作。
 
 ## English
 
-Read the warning and choose optional sound, motion, vibration and flash before starting. Drag the light if you decline motion access. Find the skull, collect three fictional camera overlays, wipe the wall, repeat a knocking sequence and unlock the final door. A hidden seal changes the ending. Pause, mute and exit remain available; the camera is optional in level 2, with a fictional-room alternative. No microphone, location, recording or upload.
+Read the warning and choose sound, motion, vibration and flash before starting. Drag the light if you decline motion access. Read and collect I → II → III, find the full 003 plate, collect three fictional camera anomalies, wipe the wall, repeat the knocks and unlock the final door. A hidden seal changes the ending. Pause, mute and exit stay available. Level 2 offers a camera or a fictional room. No microphone, location, recording or upload.
 
 Enter a valid four-digit MMDD birthday code (fictional is OK) and confirm you are 18+. MMDD cannot verify your age. The final door uses twelve HTML buttons, with no native keyboard. A wrong code starts a replay of your own key presses behind the door. Hold Clear for 3 seconds to stop it, or wait for the invitation and choose to let them in. Reload restores the scene paused and muted. Your birthday code or 0101 opens the door, fractures the keypad and triggers a final scare. Victory clears **all origin storage**, including other apps' records. It cannot lock the phone OS or prevent manual storage/clock edits.
 
-Upload the five top-level files and the intact assets/ folder to the repository root and enable GitHub Pages on `main` / root. Use HTTPS for camera and motion access. The eye trap and final door include a five-second simulated browser-window cascade; no real windows open, and pause, mute and exit remain available. Reduced motion uses a still collage. The HTML includes fallback artwork and synthesized sound; upload the four assets and ASSETS.md for the photo room, recorded knock, ghost and short TV-static transitions. `?lang=en` opens the English entrance. Physical device behavior must be tested separately.
+The upload package contains five top-level files and eight files in assets/. Keep that folder intact. Use GitHub Pages on `main` / root and HTTPS for camera and motion access. The eye trap and final door simulate browser-window cascades inside the canvas; real controls stay available. Reduced motion uses a still collage. Artwork and sound have built-in fallbacks. `?lang=en` opens English. The Cozy preview is pending WebKit verification because Windows currently blocks its test process; physical phones also need separate checks.
 
-Displayed scares persist a curse and incident count in localStorage. Returning shows a red entrance, but sound and sensors still require your choice. From four incidents, the next run has half the beam radius and a 3-second scare timer instead of 10. Purify with seven rapid taps on blank entrance space or hold the red message for five seconds. Purification calls `localStorage.clear()`, deleting **all keys for this origin**, including other apps' records. Blocked storage falls back to the open page only.
+Displayed scares save a curse and incident count locally. Returning shows a red entrance; audio and sensors still need your choice and a gesture. The first genuinely observed clue starts a ten-game-second pressure window. From four incidents, the next run uses half the beam and a three-second window. Purify with seven quick taps on blank entrance space or hold the red message for five seconds. Purification deletes **all localStorage keys for this origin**, including the local leaderboard and other apps' records. Blocked storage falls back to the open page only.
 
 ## 日本語
 
-警告を読み、音・センサー・振動・点滅を選んで開始してください。センサーを拒否しても、光を指で動かして遊べます。頭蓋骨を探し、取景器の架空の異変を三つ集め、壁を拭き、ノックの順番を再現して最後の扉を開けます。隠された印で結末が変わります。一時停止・消音・終了が使えます。第2章のカメラは任意で、架空の部屋でもクリアできます。マイク・位置情報・録画・送信は使いません。
+注意を読んで、音・センサー・振動・点滅を選んではじめてね。センサーを使わなくても、指で光を動かせます。I→II→IIIの番号札を集め、完全な003を探して、架空の異変を三つ撮り、壁を拭き、ノックをまねして最後の扉を開けます。隠れた印で結末が変わります。一時停止・消音・終了はいつでも使えます。第2章はカメラでも架空の部屋でも遊べます。マイク・位置情報・録画・送信は使いません。
 
-四桁の誕生日の月日（架空でも可）を入力し、18 歳以上と確認してください。月日だけでは実際の年齢を確認できません。最後の扉は 12 個の HTML ボタンで、端末のキーボードを出しません。間違うと扉の向こうでさっきの操作が再生されます。消去を3秒長押しで止めるか、招待を待って中に入れるか選べます。再読み込み後は一時停止・消音で再開します。誕生日コードか 0101 で開き、ボタンが崩れ、最後の恐怖画面とクリア画面が現れます。クリアは**同じオリジンの全記録**を削除します。端末の OS はロックできず、手動のデータ削除や時計変更も防げません。
+月日を4桁で入力し、18歳以上であることを確認してください。架空の日付でもよく、月日だけで年齢を調べることはありません。最後の扉は12個の画面内ボタンで操作します。間違うと、向こう側でさっきの操作が再生されます。消去を3秒長押しして止めるか、招待を待って中に入れるか選べます。再読み込み後は一時停止・消音から再開します。入力した月日か0101で開き、最後の恐怖画面とクリア画面が現れます。クリア時はこの端末のランキングを残し、それ以外の記録を削除します。隠し浄化ではランキングも消えます。端末のOSをロックする機能はありません。
 
 ルートの五つのファイルと assets/ フォルダーをそのままリポジトリ直下に置き、GitHub Pages の `main` / root を指定します。カメラとセンサーは HTTPS で試してください。代替の画像と音は HTML 内蔵です。目の罠と最後の扉は、ページ内の偽ウィンドウが増える五秒の演出です。実際のタブは開かず、停止・消音・終了できます。写真の部屋、恐怖の顔と実録ノックには assets/ と ASSETS.md もアップロードしてください。`?lang=ja` で日本語の入口を開けます。実機の動作は別途確認してください。
 
-恐怖画面の表示回数と呪いを localStorage に保存します。再訪時は赤い入口になり、音とセンサーは再び選択が必要です。4 回以上で次の周回の光が半分、恐怖までの時間が 10 秒から 3 秒になります。入口の空白を素早く 7 回タップ、または赤い文章を 5 秒長押しすると浄化します。`localStorage.clear()` は**同じオリジンの全記録**を削除し、他のアプリにも影響します。保存が拒否された場合は現在のページ内だけで記憶します。
+恐怖画面の回数と呪いは、この端末のlocalStorageに保存します。戻ると赤い入口になりますが、音とセンサーはもう一度選べます。最初の番号札を実際に読んでから10ゲーム秒の猶予が始まり、4回以上なら次の周回は光が半分、猶予は3秒になります。空白を素早く7回タップするか赤い文章を5秒長押しすると浄化します。同じオリジンの全記録が消え、ランキングや他のアプリにも影響します。保存できない場合は開いているページだけで記憶します。
 
 
 ## 每三秒換位的密碼鍵盤
@@ -187,7 +195,7 @@ English: The digits shuffle every 3 seconds. Watch the labels; your entered code
 
 重演及三秒清除都受遊戲時鐘控制；指頭移開／第二指／取消／失焦／暫停會取消未完成清除。鍵盤Space／Enter可長按。音效、靜音、退出與減少動態沿用設定。約10.8秒出現邀請，可繼續清除或明確允許進入；後者接短驚嚇後仍可重試。
 
-通關的終極驚嚇顯示時會清空整個同來源localStorage，包含其他作品的紀錄；結局不再寫回詛咒。淨化亦依既有規則清空同來源，普通退出與刷新不清除。
+通關的終極驚嚇顯示時會清空同來源localStorage，包含其他作品的紀錄，僅豁免本機理智排行榜；結局不再寫回詛咒或提交第二次排名。淨化仍清空同來源所有資料（含排行榜），普通退出與刷新不清除。
 
 ## 新增的三隻原創鬼
 
@@ -197,11 +205,11 @@ English: The digits shuffle every 3 seconds. Watch the labels; your entered code
 
 ## 第二關：隨機鬼影與移動探索
 
-後鏡頭可在不同空間持續探索，收集進度保留；鬼影是畫面疊圖，並非真實空間的AR定位。相機模式保留中央視野、降低周邊暗角，三隻原創鬼隨機從兩側短暫現身。虛構暗房也有同樣機制。
+後鏡頭可在不同空間持續探索，收集進度保留；鬼影是畫面疊圖，並非真實空間的AR定位。相機模式保留中央視野、降低周邊暗角，三隻原創模糊鬼影隨機現身，每隻有完整一分鐘可找。虛構暗房也有同樣機制。
 
-選好鏡頭或暗房後，首輪等4.5–7.5遊戲秒；每次消失後再等6–10遊戲秒。角色洗牌不連續重複，出現1.1–1.9秒，有淡入淡出／微小偏頭；減少動態為2.4秒固定姿態。它們不是收集目標、不增加死亡；提示已包含中文、口語英文及日文。
+選好鏡頭或暗房後，首輪等4.5–7.5遊戲秒；每次消失後再等6–10遊戲秒。角色洗牌不連續重複，每隻保留60遊戲秒；畫面顯示剩餘時間。光圈對準鬼影時，既有按鈕變成「捕捉鬼影」，成功後增加獨立捕捉數、清除這隻並再排下一隻。三個異狀仍是主線條件，鬼影不增加死亡、不錄下照片；提示包含中文、口語英文及日文。減少動態固定姿態，但同樣有60秒。
 
-選音效後搭配短促低聲道合成氣音；暫停凍結畫面與時鐘，切到背景會關閉鏡頭，回來需要手動繼續並重新開後鏡頭。重新開鏡頭、進入底片／文件或離關，清除本輪鬼影與聲音，不在背景累積遭遇。首頁沒有新增下載，素材共八項、公開十三檔，預算維持246000／900000 bytes。
+選音效後搭配短促低聲道合成氣音；暫停凍結畫面、鬼影剩餘時間與時鐘，切到背景會關閉鏡頭，回來需要手動繼續並重新開後鏡頭。重新開鏡頭、進入底片／文件或離關，清除本輪鬼影與聲音，不在背景累積遭遇。首頁沒有新增下載，素材共八項、公開十三檔，預算維持280000／930000 bytes。
 
 ## 第二關：靠近的聲音（2026-10-15）
 
@@ -210,3 +218,54 @@ English: The digits shuffle every 3 seconds. Watch the labels; your entered code
 腳步及推門採小森平的實錄短切片，加工成單一1.46秒、46764-byte WAV；只有已選音效、開始操作第二關且Web Audio正在運行才按需下載。作者／原素材頁／自訂免費使用條款及加工記錄見ASSETS.md，並非CC0。缺檔、毀損或離線自動使用合成聲；晚到只快取，不突然補播。
 
 心跳及故障聲由原生Web Audio合成，不需要Gemini、外部套件或金鑰。暫停凍結音訊與遊戲秒數；靜音立即停止這輪音源、不補播錯過的腳步，退出中止載入，離關及進底片／文件清理聲音。背景恢復仍需手動繼續。桌面原生音訊、靜默區段與波形已檢查；iPhone17／Sony1IV耳機音色、左右定位及背景行為依手機測試.md實測。
+
+## 入口預設勾選（2026-10-15）
+
+正常與詛咒入口的音效、感應器、震動、閃光及成年／警告確認五項皆預設勾選，玩家可以自行取消。開始仍要填有效的虛構月日並按下按鈕；取消成年確認會停用開始。預勾不會直接啟動音訊／感應器，也不能替瀏覽器授權。相機仍要在第二關另按開啟；拒絕可用觸控與暗房。入口的警告及退出保持可見。
+
+第二關的柔焦是原創鬼像在離屏Canvas做九次偏移平均，只在出場或尺寸改變時建快取，沒有修改相機畫面或外部圖片。旋轉手機時保留鬼影身份與原期限，必要時移到可用位置。到期／拍到／離關時釋放這隻快取，回底片或文件保留捕捉數，新遊戲重置。倒數不每秒打斷螢幕閱讀器，成功提示由原有狀態文字提供。
+
+
+## 暱稱與理智排行榜（2026-10-15）
+
+正常／詛咒首頁可以填暱稱，最多16個Unicode字元，空白以「旅人」開始。只存這台裝置、這個瀏覽器、這個網址來源；輸入完成可按鍵盤Done／Enter收起。暱稱不會上傳或當作真人識別。
+
+理智是0–100的**遊戲分數**，參考[Chaosium官方SAN概念](https://cthulhuwiki.chaosium.com/investigators/step-two-secondary-attributes.html)所描述的「面對恐怖損失、調查成功回復」，採本作確定性計分，沒有擲骰、真人恐懼偵測或醫療評估。公式如下，最後統一限制在0–100：
+
+| 遊戲事件 | 理智變化 |
+| --- | --- |
+| 初始 | 100 |
+| 真正顯示一次非最終突發驚嚇 | −12 |
+| 提交一次四位錯誤月日 | −8 |
+| 底片每顆新增眼睛 | −2，最多7顆；同一眼數不重扣 |
+| 通過長廊、取景器、血牆、敲門 | 各+4，只計首次 |
+| 捕捉模糊鬼影 | 每隻+2，最多三隻 |
+| 取得底片密碼線索 | +3，只計首次 |
+| 完成遊戲 | +8，只計一次；最終演出不額外扣分 |
+
+靜音、調音量、暫停、返回App、拒絕權限都不扣理智。普通退出／刷新保留本輪事件，用同暱稱重新開始會繼續計分；新的暱稱建立新輪。此為可以自行修改的本機紀錄，沒有防作弊或跨裝置／全球排行榜。
+
+結局顯示剩餘理智和損失／回復，再展開「理智排行榜」看本機前10名。同暱稱只留最高分，平手保留較早紀錄，排名90日有效、下次開頁實際清理過期資料。點「刪除本機排行榜」可刪除；隱藏淨化也會全部刪除。通關的全來源clear僅豁免horror_sanity_board，本輪／暱稱／生日／死亡／門後及其他來源key照舊清除，結局不會重新提交或寫回詛咒。儲存被封鎖時仍可玩，結局會提示本次分數未保存。
+
+## 拍照、降低音量與返回的驚喜
+
+- 第二關按遊戲的捕捉／拍照按鈕，原創底片裡出現另一張臉；不截取、保存或上傳真實相機照片，不增加死亡、不阻擋原來的異狀或鬼影捕捉。
+- 展開底部「遊戲音量」調低時，出現仍在動嘴的鬼影和耳語文字。音量確實乘上玩家選定的比例，0%維持安靜，這個反應不開聲或反升音量，原靜音按鈕仍可用。
+- 遊玩中切App／分頁或鎖屏至少一秒，背景會暫停並停止相機；回來仍要親自按繼續，才出現「它一直在等你」的異變。首頁、結局、預先暫停或請求權限中的離開不觸發。瀏覽器返回快取保留場景與暫停，音訊和相機保持停止。
+
+三種反應是2.5遊戲秒的短片，每種有20遊戲秒冷卻，不重疊；正式驚嚇、相機選擇、文件／門後演出優先，待可玩場景再出現。暫停凍結、退出取消、減少動態固定。這些反應不扣SAN或增加死亡。
+
+手機網頁**無法可靠偵測系統截圖或實體音量鍵**。使用者已同意採遊戲內操作作替代。[Page Visibility](https://developer.mozilla.org/en-US/docs/Web/API/Page_Visibility_API)只提供hidden／visible，[volumechange](https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/volumechange_event)只反映媒體element的volume／muted；本版沒有假截圖／硬體音量偵測，不蒐集其他App資訊、不要求螢幕錄製或麥克風。
+
+
+## 第一關門牌碎片（2026-10-15）
+
+舊版固定骷髏熱點已移除。三片破紙與完整門牌從七個安全位置洗牌，本輪位置固定，重玩換位；不靠背座標直接跳第二關。
+
+拖曳光圈或傾斜手機，使光圈中心照住紙片1.2遊戲秒，編號才讀得清。按 I → II → III 收集，每收一片進度加一；按紙片或底部拿取按鈕都要符合觀察條件。拖曳只觀察，不自動拿取。編號已讀過就保留，換順序可以重新找。
+
+收錯順序會散落回0/3；累計三次錯序會出現一次既有陷阱驚嚇，再清錯誤計數。三片拼成003後，完整門牌浮現在第四個位置，照住讀清並確認才進取景器。提示說明規則，不提供固定座標。
+
+觀察共用遊戲時鐘，暫停凍結；正式驚嚇開始時取消目前的觀察，回來重新照住，已收碎片仍保留。旋轉保留位置身份、編號與進度。10秒／重度3秒驚嚇仍只有一次；拒絕感應、靜音、減少動態均能解。碎片不加理智分，完成第一關仍只+4一次；錯序驚嚇按既有實際演出記−12與死亡。
+
+本輪沒有新素材或權限，仍13公開檔／8素材。HTML預算於實作前調整至280000、public930000不變；corridor-report是第22個門檻，舊21道全部保留。詳手機測試與本機qa/verification.md。
