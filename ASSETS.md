@@ -1,8 +1,8 @@
 # 素材來源與選用方式
 
-更新：2026-10-15
+更新：2026-10-19
 
-這些素材隨作品放在同來源 assets/，遊玩時不連生成服務或素材來源網站。八檔缺漏時，內建 Canvas / Web Audio 仍能完整通關。
+這些素材隨作品放在同來源assets/，遊玩時不連生成服務或素材來源網站。十五檔缺漏時，內建Canvas / Web Audio仍能完整通關。原八檔與後室七檔的來源分別記錄，不推定同一授權。
 
 ## assets/curtain-room.webp
 
@@ -55,12 +55,12 @@ SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
 
 ## 上傳
 
-把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下八個素材一起上傳。共十三個檔案；不需要 work/、qa/、API 金鑰或 node_modules。只上傳 HTML 仍可玩，使用內建場景和合成敲聲。
+把 index.html、README.md、手機測試.md、.nojekyll、ASSETS.md 及 assets/ 下十五個素材一起上傳。共二十個檔案；不需要work/、qa/、原MP4與長音檔、API金鑰或node_modules。只上傳HTML仍可玩，使用內建場景和合成聲。
 
 
 ## 底片支線（沒有新增資產）
 
-機械眼壁、三至十眼、瞳孔與四位月日均由內聯 Canvas 程序原創繪製，不使用網路圖片、玩家鏡頭畫面或素材佔位圖。眼壁本身沒有額外資產；進入支線的短暫雪花過場會按需載入上述tv-static.webp，公開共八素材、十三檔。
+機械眼壁、三至十眼、瞳孔與四位月日均由內聯Canvas程序原創繪製，不使用網路圖片、玩家鏡頭畫面或素材佔位圖。眼壁本身沒有額外資產；進入支線的短暫雪花過場會按需載入上述tv-static.webp。本版含後室共十五素材、二十檔。
 
 ## 原創鬼群（2026-10-14）
 
@@ -85,3 +85,35 @@ SHA256：`eba282b22a89529700d901287249b5850e93bccd7e34301ea5365bdf4ffc11b4`。
 本輪只採小森平兩個切片；Pixabay、Mixkit、Zapsplat及Fesliyan僅作參考，沒有使用其素材或聲稱其全部素材為CC0。
 
 第二關的60秒鬼影在Canvas暫存原創鬼像並九次偏移平均產生柔焦，沒有覆寫原WebP。快取只含原創鬼像，不存相機像素，沒有新增公開素材。
+
+## 後室支線七素材（2026-10-19）
+
+兩張JPG、原MP4、三支鬼聲及電話MP3皆由使用者提供。附件本身沒有完整作者／授權證明；本專案如實保留來源，不宣稱CC0、公有領域、自行錄製或已取得第三方再散布授權。檔名包含watermarked或freesound_community也不作為授權證據。原件完整保留本機，未移除水印；以下為遊戲整合檔案。
+
+| 檔案 | bytes | 來源與處理 |
+| --- | ---: | --- |
+| backroom-rest.webp | 32692 | 第一張後室圖由內建image_gen移除人體、重建牆面，保留電話／拖鞋／時鐘；1024×625 WebP |
+| backroom-clock.webp | 45724 | watermarked_img_1742154009673964674.jpg，1024×625 WebP；Canvas只取角色分層，原JPG不覆寫 |
+| backroom-wall.webp | 24614 | 第二張後室圖由內建image_gen移除牆鬼並重建壁紙；1024×625 WebP |
+| backroom-ghost.webp | 37954 | watermarked_img_8891113037144795199.jpg，1024×625 WebP；執行時身／頭／手分別遮罩 |
+| backroom-signal.webp | 8816 | 影片素材_01.mp4的0.1／0.6／1.1／1.6／2.1／2.6秒，六個320×180畫格併960×360圖集；非原影片全長 |
+| backroom-ring.mp3 | 84960 | freesound_community-telephone-electronic-42654.mp3逐位元複製，原生解碼4.248秒；遊戲每輪取前2.2秒 |
+| backroom-voices.wav | 136364 | 鬼聲音01／02／03各短裁片段，16000Hz單聲道PCM16；接聽／檔案／牆鬼捕捉各一段 |
+
+三段聲音分別取原檔2.4起1.2秒、66.2起1.3秒、50.6起1.4秒，中間間隔0.12秒，峰值正規化0.6，20ms淡入／80ms淡出。遊戲以0.84速播放並走原音量master；未選音效不請求，靜音／暫停／離開即停，缺漏使用合成回退。裁點依原生解碼及波形選取，未把波形分析描述為真人耳機聆聽。
+
+影片原長260.325秒，圖集以遊戲clock驅動，六格約三秒一輪；減少動態只顯首格。原影片內已有中文字樣，遊戲用自己的三語面板覆蓋其錯誤區，沒有聲稱那是原創影片。原始MP4與完整長MP3不隨公開包。
+
+SHA256（所有路徑均在assets/）：
+
+```
+backroom-rest.webp   2bf1676337a547f248466957d620c4306069df9b0df30308e1a2c75bea05639b
+backroom-clock.webp  c9d58c9dee29e9b354abc333e45fee947d3a0efd3c678992cf8d2b864143ac7b
+backroom-wall.webp   13c9c3a27998eb76c465955e1207de3738cb7540c6730fb243537abcb0c9ff79
+backroom-ghost.webp  8fa6a942768205c8918d5fccb6bc504b127051b69f58db9fd2c7917f9c463db3
+backroom-signal.webp 7342b1bce8f19cceae7f32e3824d78fde029708a2a546cdd97874545bda2f5c8
+backroom-ring.mp3    e9d8bf74db7e6ee753f88203c35d9bc6e9fdb1b24e594333c91f82d7e46a9f31
+backroom-voices.wav  1b7a650065bbdfb4d265c8c77d9807ea26ea527d0034a06e942c1f3875b22309
+```
+
+本機生成提示意圖與原圖路徑見work/backroom-prompts.md，格式／切片／原始檔雜湊見backroom-image-manifest.json與backroom-media-manifest.json。三張原創鬼圖的既有授權說明不套用這些使用者附件。
